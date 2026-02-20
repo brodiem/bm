@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writing — Brodie McCulloch</title>
+  <meta name="description" content="Ideas on ecosystem building, venture capital, women in tech, and building from Perth. By Brodie McCulloch, founder of Spacecubed and Venture Partner at Purpose Ventures.">
+  <link rel="canonical" href="https://brodiemcculloch.com/blog.html">
+  <meta property="og:title" content="Writing — Brodie McCulloch">
+  <meta property="og:description" content="Ideas on ecosystem building, venture capital, and building world-class innovation from Perth.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://brodiemcculloch.com/blog.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Brodie McCulloch — Writing",
+    "url": "https://brodiemcculloch.com/blog.html",
+    "author": {
+      "@type": "Person",
+      "name": "Brodie McCulloch",
+      "url": "https://brodiemcculloch.com"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    :root {
+      --cream: #F8F5F0; --cream-dark: #EDE9E2; --white: #FFFFFF;
+      --navy: #0C2340; --navy-mid: #1A3A5C; --navy-light: #2A4E72;
+      --gold: #C8901F; --gold-light: #D4A84B; --gold-pale: rgba(200,144,31,0.12);
+      --teal: #1B6B7A; --charcoal: #1A1A1A; --slate: #5A6272; --slate-light: #8492A6; --sand: #DDD5C8;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+      --radius-md: 14px; --radius-lg: 22px;
+      --shadow-md: 0 4px 20px rgba(0,0,0,0.08); --shadow-lg: 0 12px 48px rgba(0,0,0,0.12);
+      --max-w: 1160px;
+    }
+    body { background: var(--cream); color: var(--charcoal); font-family: var(--font-body); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+    h1,h2,h3,h4 { font-family: var(--font-display); line-height: 1.12; }
+    a { color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    /* NAV */
+    nav { position: fixed; inset: 0 0 auto 0; z-index: 200; background: rgba(248,245,240,0.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--sand); transition: box-shadow 0.3s; }
+    nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.06); border-bottom-color: #C8C0B0; }
+    .nav-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+    .nav-logo { font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; color: var(--navy); text-decoration: none; }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--slate); font-size: 0.85rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--navy); }
+    .nav-cta { background: var(--navy) !important; color: var(--white) !important; padding: 9px 22px !important; border-radius: 100px; font-size: 0.82rem !important; font-weight: 600 !important; }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 6px; color: var(--navy); }
+    @media(max-width:768px) {
+      .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--cream); flex-direction: column; padding: 16px 24px 24px; gap: 4px; border-bottom: 1px solid var(--sand); }
+      .nav-links.open { display: flex; }
+      .nav-links li { width: 100%; }
+      .nav-links a { display: block; padding: 10px 0; }
+      .nav-hamburger { display: block; }
+    }
+
+    /* BLOG HERO */
+    .blog-hero { padding: 120px 24px 64px; background: var(--white); border-bottom: 1px solid var(--sand); }
+    .blog-hero-inner { max-width: var(--max-w); margin: 0 auto; }
+    .blog-hero-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 12px; }
+    .blog-hero h1 { font-size: clamp(2.2rem, 4vw, 3.4rem); color: var(--navy); margin-bottom: 16px; max-width: 640px; }
+    .blog-hero p { color: var(--slate); font-size: 1rem; max-width: 540px; line-height: 1.75; }
+
+    /* FILTERS */
+    .filters { padding: 24px; background: var(--white); border-bottom: 1px solid var(--sand); }
+    .filters-inner { max-width: var(--max-w); margin: 0 auto; display: flex; gap: 10px; flex-wrap: wrap; }
+    .filter-btn { background: transparent; border: 1.5px solid var(--sand); border-radius: 100px; padding: 7px 18px; font-size: 0.78rem; font-weight: 600; color: var(--slate); cursor: pointer; transition: all 0.2s; font-family: var(--font-body); }
+    .filter-btn:hover, .filter-btn.active { background: var(--navy); border-color: var(--navy); color: var(--white); }
+
+    /* BLOG LIST */
+    .blog-list { padding: 64px 24px 80px; }
+    .blog-list-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    /* Featured (large) post */
+    .post-featured {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--sand);
+      background: var(--white);
+      text-decoration: none;
+      margin-bottom: 32px;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .post-featured:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .post-featured-image { background: linear-gradient(135deg, var(--navy) 0%, var(--teal) 100%); min-height: 320px; position: relative; }
+    .post-featured-image-label { position: absolute; bottom: 20px; left: 24px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.7); background: rgba(0,0,0,0.25); backdrop-filter: blur(8px); padding: 5px 12px; border-radius: 100px; }
+    .post-featured-body { padding: 48px; display: flex; flex-direction: column; justify-content: center; }
+    .post-featured-tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+    .post-featured-title { font-family: var(--font-display); font-size: 1.6rem; color: var(--navy); line-height: 1.2; margin-bottom: 16px; }
+    .post-featured-excerpt { color: var(--slate); font-size: 0.9rem; line-height: 1.75; margin-bottom: 24px; }
+    .post-featured-meta { font-size: 0.75rem; color: var(--slate-light); }
+    .read-more { display: inline-flex; align-items: center; gap: 6px; font-size: 0.82rem; font-weight: 600; color: var(--gold); text-decoration: none; margin-top: 16px; transition: gap 0.2s; }
+    .read-more:hover { gap: 10px; }
+    @media(max-width:768px) { .post-featured { grid-template-columns: 1fr; } .post-featured-image { min-height: 200px; } .post-featured-body { padding: 28px; } }
+
+    /* Post grid */
+    .posts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    @media(max-width:900px) { .posts-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media(max-width:600px) { .posts-grid { grid-template-columns: 1fr; } }
+
+    .post-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--sand);
+      overflow: hidden;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .post-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .post-card-image { height: 160px; position: relative; }
+    .post-card-image-label { position: absolute; bottom: 10px; left: 14px; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.75); background: rgba(0,0,0,0.2); backdrop-filter: blur(6px); padding: 3px 9px; border-radius: 100px; }
+    .post-card-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
+    .post-card-tag { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+    .post-card-title { font-family: var(--font-display); font-size: 1.05rem; color: var(--navy); line-height: 1.3; margin-bottom: 10px; flex: 1; }
+    .post-card-excerpt { font-size: 0.8rem; color: var(--slate); line-height: 1.65; margin-bottom: 16px; }
+    .post-card-meta { font-size: 0.7rem; color: var(--slate-light); margin-top: auto; }
+
+    /* Article content */
+    .article-content { padding: 80px 24px; }
+    .article-inner { max-width: 720px; margin: 0 auto; }
+    .article-header { margin-bottom: 48px; }
+    .article-tag { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 12px; }
+    .article-title { font-size: clamp(1.8rem, 3.5vw, 2.6rem); color: var(--navy); margin-bottom: 20px; }
+    .article-meta { font-size: 0.8rem; color: var(--slate-light); margin-bottom: 32px; padding-bottom: 32px; border-bottom: 1px solid var(--sand); }
+    .article-body { font-size: 1rem; color: var(--charcoal); line-height: 1.85; }
+    .article-body p { margin-bottom: 20px; }
+    .article-body h2 { font-size: 1.4rem; color: var(--navy); margin: 36px 0 16px; }
+    .article-body h3 { font-size: 1.15rem; color: var(--navy); margin: 28px 0 12px; }
+    .article-body blockquote { border-left: 3px solid var(--gold); padding: 16px 24px; margin: 28px 0; background: var(--cream); border-radius: 0 var(--radius-md) var(--radius-md) 0; font-style: italic; color: var(--slate); }
+    .article-body strong { color: var(--navy); }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; font-size: 0.82rem; font-weight: 600; color: var(--slate); text-decoration: none; margin-bottom: 32px; transition: color 0.2s; }
+    .back-link:hover { color: var(--navy); }
+
+    /* Newsletter in blog */
+    .blog-newsletter { background: var(--navy); padding: 64px 24px; margin-top: 80px; }
+    .blog-newsletter-inner { max-width: 560px; margin: 0 auto; text-align: center; }
+    .blog-newsletter-inner h3 { font-family: var(--font-display); font-size: 1.6rem; color: var(--white); margin-bottom: 12px; }
+    .blog-newsletter-inner p { color: rgba(255,255,255,0.65); font-size: 0.9rem; margin-bottom: 24px; }
+    .newsletter-form { display: flex; gap: 10px; }
+    .newsletter-input { flex: 1; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 100px; padding: 12px 18px; font-size: 0.88rem; color: var(--white); font-family: var(--font-body); outline: none; }
+    .newsletter-input::placeholder { color: rgba(255,255,255,0.4); }
+    .btn { display: inline-flex; align-items: center; gap: 8px; border-radius: 100px; font-size: 0.875rem; font-weight: 600; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; border: none; padding: 12px 24px; font-family: var(--font-body); }
+    .btn-gold { background: var(--gold); color: var(--white); }
+    .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(200,144,31,0.35); }
+    @media(max-width:560px) { .newsletter-form { flex-direction: column; } .newsletter-input { border-radius: var(--radius-md); } }
+
+    /* Footer */
+    footer { background: var(--navy); padding: 40px 24px; color: rgba(255,255,255,0.5); }
+    .footer-bottom-simple { max-width: var(--max-w); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+    .footer-bottom-simple p { font-size: 0.78rem; }
+    .footer-nav { display: flex; gap: 20px; }
+    .footer-nav a { font-size: 0.78rem; color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
+    .footer-nav a:hover { color: var(--white); }
+
+    /* Gradient bg helpers */
+    .bg-navy { background: linear-gradient(135deg, var(--navy) 0%, var(--teal) 100%); }
+    .bg-gold { background: linear-gradient(135deg, #7A4F0A 0%, var(--gold) 100%); }
+    .bg-teal { background: linear-gradient(135deg, var(--teal) 0%, #0A3D48 100%); }
+    .bg-purple { background: linear-gradient(135deg, #3A1A5C 0%, #6B35A8 100%); }
+    .bg-rose { background: linear-gradient(135deg, #5C1A2E 0%, #C2375A 100%); }
+    .bg-green { background: linear-gradient(135deg, #0D3A1A 0%, #2D8A45 100%); }
+
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .section-divider { border: none; border-top: 1px solid var(--sand); margin: 56px 0; }
+  </style>
+</head>
+<body>
+
+  <nav id="site-nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Brodie McCulloch</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/#programs">Programs</a></li>
+        <li><a href="/#what-i-do">What I Build</a></li>
+        <li><a href="/#who-i-work-with">Who I Work With</a></li>
+        <li><a href="blog.html" class="active">Writing</a></li>
+        <li><a href="/#connect" class="nav-cta">Connect</a></li>
+      </ul>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="blog-hero">
+    <div class="blog-hero-inner">
+      <span class="blog-hero-label">Writing</span>
+      <h1>Ideas worth sharing.</h1>
+      <p>Occasional writing on ecosystem building, venture capital, innovation strategy, women in tech, and what it means to build something real from Perth.</p>
+    </div>
+  </div>
+
+  <div class="filters">
+    <div class="filters-inner">
+      <button class="filter-btn active" onclick="filterPosts('all')">All</button>
+      <button class="filter-btn" onclick="filterPosts('Ecosystem Building')">Ecosystems</button>
+      <button class="filter-btn" onclick="filterPosts('Women in Tech')">Women in Tech</button>
+      <button class="filter-btn" onclick="filterPosts('Venture Capital')">Venture Capital</button>
+      <button class="filter-btn" onclick="filterPosts('Founder Strategy')">Founder Strategy</button>
+      <button class="filter-btn" onclick="filterPosts('Automation')">Automation</button>
+    </div>
+  </div>
+
+  <div class="blog-list">
+    <div class="blog-list-inner">
+
+      <!-- FEATURED POST -->
+      <a href="#ecosystem-equation" id="ecosystem-equation" class="post-featured reveal" data-category="Ecosystem Building">
+        <div class="post-featured-image bg-navy">
+          <div class="post-featured-image-label">Featured</div>
+        </div>
+        <div class="post-featured-body">
+          <div class="post-featured-tag">Ecosystem Building</div>
+          <h2 class="post-featured-title">The Ecosystem Equation: Why Perth's Innovation Hub Works — and What Most Cities Get Wrong</h2>
+          <p class="post-featured-excerpt">Everyone wants a Silicon Valley. Almost everyone builds it wrong. Top-down strategies, announced precincts, glossy reports — and then, five years later, the same question: "why isn't it working?" Here's what 13 years of trial, error, and genuine breakthroughs taught me about what it actually takes to build an innovation ecosystem that lasts.</p>
+          <div class="post-featured-meta">Brodie McCulloch · Feb 2026 · 10 min read</div>
+          <span class="read-more">Read more →</span>
+        </div>
+      </a>
+
+      <div class="article-content" id="ecosystem-equation-full" style="display:none;">
+        <div class="article-inner">
+          <a href="blog.html" class="back-link">← Back to all posts</a>
+          <div class="article-header">
+            <span class="article-tag">Ecosystem Building</span>
+            <h1 class="article-title">The Ecosystem Equation: Why Perth's Innovation Hub Works — and What Most Cities Get Wrong</h1>
+            <div class="article-meta">Brodie McCulloch · Feb 2026 · 10 min read</div>
+          </div>
+          <div class="article-body">
+            <p>In 2012, we started Spacecubed in a single room in Perth's CBD. No government grant. No university backing. No corporate sponsor. Just a co-founder, a conviction, and a credit card.</p>
+            <p>Thirteen years later, Spacecubed operates across 7 locations, has supported thousands of founders, hosted hundreds of events, and become the connective tissue of Western Australia's innovation ecosystem. The Plus Eight Accelerator has deployed $3.7M, seen $24M+ in follow-on capital, and built a $150M+ portfolio. She Codes has upskilled 6,000+ women in technology.</p>
+            <p>People ask me all the time: how did you do it?</p>
+            <blockquote>"The answer isn't about the space. It was never about the space."</blockquote>
+            <h2>What Actually Makes an Ecosystem</h2>
+            <p>Most cities trying to build innovation hubs make the same mistake: they confuse the outputs for the inputs. They build the building before they build the community. They announce the precinct before they understand the market. They hire the consultants before they talk to the founders.</p>
+            <p>An ecosystem is, at its core, a set of relationships and norms that allow resources — capital, talent, knowledge, opportunity — to flow efficiently between people who need them and people who have them. The building is just where people bump into each other. The program is just an excuse to be in the same room.</p>
+            <h2>The Three Things That Actually Matter</h2>
+            <p><strong>1. Trust infrastructure.</strong> Before you can have deals, you need trust. Before trust, you need repeated interaction. This is why coworking works when it's designed right — it creates the casual, low-stakes interactions that compound into something real over time. VGW, which went on to be valued at $3 billion, met key people at a Spacecubed breakfast. Not at a formal pitch event. Breakfast.</p>
+            <p><strong>2. Genuine tolerance for failure.</strong> Silicon Valley's secret weapon isn't the money — it's the social permission to fail. In Perth in 2012, failing publicly was career-ending. We worked hard to shift that norm: celebrating companies that tried and pivoted, amplifying stories of resilience, creating structures where failure didn't destroy the founder's reputation or network.</p>
+            <p><strong>3. Patient capital and patient institution-building.</strong> Ecosystems take 10-15 years to mature. Most government programs run on 3-year funding cycles. Most corporate innovation initiatives last 18 months before the sponsor moves on. The single biggest structural problem in ecosystem building is the mismatch between the timeline of institutional support and the timeline of ecosystem development.</p>
+            <h2>The Churchill Fellowship Lesson</h2>
+            <p>When I did my Churchill Fellowship research in 2014, I visited 12 countries studying innovation ecosystems. I went expecting to find the secret formula. What I found instead was that every successful ecosystem had a slightly different formula — but they all shared one trait: they had built around genuine, local strengths, not imported templates.</p>
+            <p>Perth's strength is proximity to Asia, deep resource-industry expertise, and a culture of practical problem-solving. Our ecosystem works when we lean into those strengths. It fails when we try to be Silicon Valley.</p>
+            <h2>What I'd Tell My 2012 Self</h2>
+            <p>Build slower. The instinct when building an ecosystem is to grow fast — more events, more members, more programs, more square metres. But depth beats breadth every time. Ten founders who are deeply embedded in your community and trust each other are worth more than a thousand people with access cards.</p>
+            <p>And trust the compounding. The connections that happen in year one pay dividends in year five. The board member who joins your program in year two introduces you to the investor who funds your most important company in year seven. Ecosystems are long games. Play them that way.</p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <!-- POST GRID -->
+      <div class="posts-grid" id="posts-grid">
+
+        <a href="#she-codes-story" id="she-codes-story" class="post-card reveal" data-category="Women in Tech">
+          <div class="post-card-image bg-rose">
+            <div class="post-card-image-label">She Codes</div>
+          </div>
+          <div class="post-card-body">
+            <div class="post-card-tag">Women in Tech</div>
+            <h3 class="post-card-title">6,000 Women Later: What She Codes Taught Me About Scaling Impact</h3>
+            <p class="post-card-excerpt">It started with a workshop. It became a movement. The unexpected lessons from building Australia's largest women in tech initiative.</p>
+            <div class="post-card-meta">Brodie McCulloch · Jan 2026 · 7 min read</div>
+          </div>
+        </a>
+
+        <a href="#build-from-edge" id="build-from-edge" class="post-card reveal" data-category="Founder Strategy">
+          <div class="post-card-image bg-teal">
+            <div class="post-card-image-label">Strategy</div>
+          </div>
+          <div class="post-card-body">
+            <div class="post-card-tag">Founder Strategy</div>
+            <h3 class="post-card-title">Why the Best Founders Should Build From the Edge</h3>
+            <p class="post-card-excerpt">The conventional wisdom says move to where the action is. But the geography of innovation is shifting — and your edge might be your edge.</p>
+            <div class="post-card-meta">Brodie McCulloch · Dec 2025 · 6 min read</div>
+          </div>
+        </a>
+
+        <a href="#purpose-ventures" id="purpose-ventures" class="post-card reveal" data-category="Venture Capital">
+          <div class="post-card-image bg-green">
+            <div class="post-card-image-label">Venture Capital</div>
+          </div>
+          <div class="post-card-body">
+            <div class="post-card-tag">Venture Capital</div>
+            <h3 class="post-card-title">What Impact Investing Actually Means in 2026 (And Why Most People Get It Wrong)</h3>
+            <p class="post-card-excerpt">The term "impact investing" has been diluted to the point of meaninglessness. Here's what it means in practice — and how we think about it at Purpose Ventures.</p>
+            <div class="post-card-meta">Brodie McCulloch · Nov 2025 · 8 min read</div>
+          </div>
+        </a>
+
+        <a href="#aarp-future" id="aarp-future" class="post-card reveal" data-category="Automation">
+          <div class="post-card-image bg-navy">
+            <div class="post-card-image-label">Automation</div>
+          </div>
+          <div class="post-card-body">
+            <div class="post-card-tag">Automation &amp; Robotics</div>
+            <h3 class="post-card-title">Australia's Automation Moment: Why AARP Exists and What It Needs to Become</h3>
+            <p class="post-card-excerpt">The automation wave is coming whether Australia is ready or not. Here's why the Australian Automation &amp; Robotics Precinct is one of the most important bets this country is making.</p>
+            <div class="post-card-meta">Brodie McCulloch · Oct 2025 · 9 min read</div>
+          </div>
+        </a>
+
+        <a href="#churchill-fellowship" id="churchill-fellowship" class="post-card reveal" data-category="Ecosystem Building">
+          <div class="post-card-image bg-gold">
+            <div class="post-card-image-label">Churchill Fellowship</div>
+          </div>
+          <div class="post-card-body">
+            <div class="post-card-tag">Ecosystem Building</div>
+            <h3 class="post-card-title">12 Countries, One Question: What I Learned From My Churchill Fellowship</h3>
+            <p class="post-card-excerpt">In 2014 I spent months travelling the world studying innovation ecosystems. Here's the most important thing I learned — and how it changed what I built when I came home.</p>
+            <div class="post-card-meta">Brodie McCulloch · Sep 2025 · 11 min read</div>
+          </div>
+        </a>
+
+        <a href="#asia-global-fellow" id="asia-global-fellow" class="post-card reveal" data-category="Founder Strategy">
+          <div class="post-card-image bg-purple">
+            <div class="post-card-image-label">Asia-Pacific</div>
+          </div>
+          <div class="post-card-body">
+            <div class="post-card-tag">Asia-Pacific Strategy</div>
+            <h3 class="post-card-title">Why the Next Decade Belongs to Asia-Pacific Founders Who Think Regionally</h3>
+            <p class="post-card-excerpt">After the AsiaGlobal Fellowship at HKU, one thing is clear: the centre of gravity is shifting. Australian founders who understand what that means will build the next generation of global companies.</p>
+            <div class="post-card-meta">Brodie McCulloch · Aug 2025 · 7 min read</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="blog-newsletter">
+    <div class="blog-newsletter-inner">
+      <h3>Get new posts in your inbox</h3>
+      <p>Infrequent. Never promotional. Just ideas worth reading when they're ready.</p>
+      <form class="newsletter-form" onsubmit="handleBlogNewsletter(event)">
+        <input type="email" class="newsletter-input" placeholder="your@email.com" required id="blog-newsletter-email">
+        <button type="submit" class="btn btn-gold">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-bottom-simple">
+      <p>© 2026 Brodie McCulloch</p>
+      <nav class="footer-nav">
+        <a href="/">Home</a>
+        <a href="/#connect">Connect</a>
+        <a href="https://www.linkedin.com/in/brodiemcculloch" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('site-nav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 40); }, { passive: true });
+    const hamburger = document.getElementById('nav-hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const siblings = Array.from(entry.target.parentElement.querySelectorAll('.reveal'));
+          const delay = siblings.indexOf(entry.target) * 80;
+          setTimeout(() => entry.target.classList.add('visible'), delay);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+
+    function filterPosts(category) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+      document.querySelectorAll('.post-card, .post-featured').forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function handleBlogNewsletter(e) {
+      e.preventDefault();
+      alert("Thanks! You're on the list.");
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>

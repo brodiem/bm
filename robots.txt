@@ -1,0 +1,7 @@
+# Brodie McCulloch Personal Website
+# https://brodiemcculloch.com
+
+User-agent: *
+Allow: /
+
+Sitemap: https://brodiemcculloch.com/sitemap.xml

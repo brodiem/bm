@@ -3,14 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brodie McCulloch — Ecosystem Builder &amp; Venture Partner</title>
-  <meta name="description" content="Brodie McCulloch is the founder of Spacecubed, Perth's leading innovation hub, Venture Partner at Purpose Ventures, Churchill Fellow, and AsiaGlobal Fellow. Building from Perth, connecting to the world.">
-  <meta property="og:title" content="Brodie McCulloch">
-  <meta property="og:description" content="Founder. Ecosystem Builder. Venture Partner. Churchill Fellow. Based in Perth, connected globally.">
+  <title>Brodie McCulloch — Ecosystem Builder, Venture Partner & Innovation Catalyst</title>
+  <meta name="description" content="Brodie McCulloch built Spacecubed from a single coworking space into WA's leading innovation ecosystem. $150M+ portfolio, 6,000+ women in tech, 13 years building from Perth to the world.">
+  <meta name="keywords" content="Brodie McCulloch, Spacecubed, Plus Eight, She Codes, AARP, Purpose Ventures, startup ecosystem, Perth innovation, venture partner, Churchill Fellow">
+  <meta name="author" content="Brodie McCulloch">
+  <link rel="canonical" href="https://brodiemcculloch.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Brodie McCulloch — Ecosystem Builder & Venture Partner">
+  <meta property="og:description" content="Built WA's leading innovation ecosystem. $150M+ portfolio, 6,000+ women in tech, 13 years connecting Perth to the world.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://brodiemcculloch.com/">
+  <meta property="og:image" content="https://brodiemcculloch.com/og-image.jpg">
+  <meta property="og:site_name" content="Brodie McCulloch">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@brodiemcculloch">
+  <meta name="twitter:title" content="Brodie McCulloch — Ecosystem Builder & Venture Partner">
+  <meta name="twitter:description" content="Built WA's leading innovation ecosystem from scratch. Now connecting Australian founders to global capital.">
+  <meta name="twitter:image" content="https://brodiemcculloch.com/og-image.jpg">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Brodie McCulloch",
+    "url": "https://brodiemcculloch.com",
+    "image": "https://brodiemcculloch.com/brodie.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/brodiemcculloch",
+      "https://twitter.com/brodiemcculloch"
+    ],
+    "jobTitle": "Founder & Ecosystem Builder",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Spacecubed"
+    },
+    "alumniOf": [
+      {"@type": "EducationalOrganization", "name": "MIT"},
+      {"@type": "EducationalOrganization", "name": "University of Oxford"},
+      {"@type": "EducationalOrganization", "name": "The University of Hong Kong"},
+      {"@type": "EducationalOrganization", "name": "Murdoch University"}
+    ],
+    "award": ["Churchill Fellow 2014", "AsiaGlobal Fellow 2025"],
+    "description": "Brodie McCulloch is the founder of Spacecubed, Perth's leading innovation hub, and co-creator of Plus Eight Accelerator, She Codes, and the Australian Automation & Robotics Precinct.",
+    "knowsAbout": ["startup ecosystems", "venture capital", "innovation hubs", "women in technology", "robotics and automation", "impact investing"]
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Spacecubed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Spacecubed is Western Australia's leading innovation hub, founded by Brodie McCulloch in 2012. It operates 7 locations across WA and has supported over 10,000 founders, startups and innovators."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the Plus Eight Accelerator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Plus Eight is WA's flagship startup accelerator, founded by Brodie McCulloch. Across 8 cohorts, it has invested $3.7M direct, helped portfolio companies raise $24M+ in follow-on capital, and built a $150M+ portfolio."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I work with Brodie McCulloch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Brodie works with early-stage founders, corporate innovation teams, government agencies, and international investors. You can connect via the contact form on this site or reach out on LinkedIn."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics placeholder - replace UA-XXXXXXX with real ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 
   <style>
     /* =====================================================
@@ -33,6 +122,7 @@
       --gold-light:  #D4A84B;
       --gold-pale:   rgba(200,144,31,0.12);
       --teal:        #1B6B7A;
+      --teal-light:  #247B8C;
       --charcoal:    #1A1A1A;
       --slate:       #5A6272;
       --slate-light: #8492A6;
@@ -61,23 +151,14 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    h1, h2, h3, h4 {
-      font-family: var(--font-display);
-      line-height: 1.12;
-    }
-
+    h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.12; }
     a { color: inherit; }
-
     img { max-width: 100%; display: block; }
 
     /* =====================================================
        UTILITIES
     ===================================================== */
-    .container {
-      max-width: var(--max-w);
-      margin: 0 auto;
-      padding: 0 24px;
-    }
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
 
     .section-label {
       display: block;
@@ -89,13 +170,10 @@
       margin-bottom: 12px;
     }
 
-    .divider {
-      width: 44px;
-      height: 3px;
-      background: var(--gold);
-      border-radius: 2px;
-      margin: 20px 0 28px;
-    }
+    .divider { width: 44px; height: 3px; background: var(--gold); border-radius: 2px; margin: 20px 0 28px; }
+
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
 
     /* =====================================================
        NAVIGATION
@@ -104,14 +182,13 @@
       position: fixed;
       inset: 0 0 auto 0;
       z-index: 200;
-      background: rgba(248,245,240,0.9);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
+      background: rgba(248,245,240,0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--sand);
-      transition: border-color 0.3s;
+      transition: border-color 0.3s, box-shadow 0.3s;
     }
-
-    nav.scrolled { border-bottom-color: #C8C0B0; }
+    nav.scrolled { border-bottom-color: #C8C0B0; box-shadow: 0 2px 20px rgba(0,0,0,0.06); }
 
     .nav-inner {
       max-width: var(--max-w);
@@ -124,66 +201,44 @@
       gap: 32px;
     }
 
-    .nav-logo {
-      font-family: var(--font-display);
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: var(--navy);
-      text-decoration: none;
-      letter-spacing: -0.01em;
-      white-space: nowrap;
-    }
+    .nav-logo { font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; color: var(--navy); text-decoration: none; letter-spacing: -0.01em; white-space: nowrap; }
 
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: var(--slate);
-      font-size: 0.85rem;
-      font-weight: 500;
-      letter-spacing: 0.01em;
-      transition: color 0.2s;
-    }
-
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--slate); font-size: 0.85rem; font-weight: 500; letter-spacing: 0.01em; transition: color 0.2s; }
     .nav-links a:hover { color: var(--navy); }
 
-    .nav-cta {
-      background: var(--navy) !important;
-      color: var(--white) !important;
-      padding: 9px 22px !important;
-      border-radius: 100px;
-      font-size: 0.82rem !important;
-      font-weight: 600 !important;
-      transition: background 0.2s, transform 0.2s !important;
-    }
+    .nav-cta { background: var(--navy) !important; color: var(--white) !important; padding: 9px 22px !important; border-radius: 100px; font-size: 0.82rem !important; font-weight: 600 !important; transition: background 0.2s, transform 0.2s !important; }
+    .nav-cta:hover { background: var(--navy-mid) !important; transform: translateY(-1px); }
 
-    .nav-cta:hover {
-      background: var(--navy-mid) !important;
-      transform: translateY(-1px);
-    }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 6px; color: var(--navy); }
 
-    .nav-hamburger {
-      display: none;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 6px;
-      color: var(--navy);
+    @media(max-width:768px) {
+      .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--cream); flex-direction: column; padding: 16px 24px 24px; gap: 4px; border-bottom: 1px solid var(--sand); box-shadow: var(--shadow-md); }
+      .nav-links.open { display: flex; }
+      .nav-links li { width: 100%; }
+      .nav-links a { display: block; padding: 10px 0; font-size: 0.95rem; }
+      .nav-hamburger { display: block; }
     }
 
     /* =====================================================
        HERO
     ===================================================== */
     #hero {
-      padding: 140px 24px 80px;
+      padding: 148px 24px 90px;
       min-height: 100vh;
       display: flex;
       align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #hero::before {
+      content: '';
+      position: absolute;
+      top: -200px; right: -200px;
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(200,144,31,0.07) 0%, transparent 70%);
+      pointer-events: none;
     }
 
     .hero-grid {
@@ -206,218 +261,83 @@
       margin-bottom: 28px;
     }
 
-    .hero-eyebrow-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: var(--gold);
-      flex-shrink: 0;
-    }
+    .hero-eyebrow-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--gold); flex-shrink: 0; animation: pulse 2.4s ease-in-out infinite; }
 
-    .hero-eyebrow span {
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--gold);
-    }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.6;transform:scale(0.85)} }
 
-    .hero-headline {
-      font-size: clamp(2.4rem, 4.5vw, 3.8rem);
-      font-weight: 700;
-      color: var(--navy);
-      letter-spacing: -0.025em;
-      margin-bottom: 24px;
-      line-height: 1.07;
-    }
+    .hero-eyebrow span { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); }
 
-    .hero-headline em {
-      font-style: italic;
-      color: var(--gold);
-    }
+    .hero-headline { font-size: clamp(2.4rem, 4.5vw, 3.8rem); font-weight: 700; color: var(--navy); letter-spacing: -0.025em; margin-bottom: 24px; line-height: 1.07; }
+    .hero-headline em { font-style: italic; color: var(--gold); }
 
-    .hero-sub {
-      font-size: 1.1rem;
-      font-weight: 500;
-      color: var(--navy-mid);
-      margin-bottom: 16px;
-      line-height: 1.5;
-    }
+    .hero-sub { font-size: 1.1rem; font-weight: 500; color: var(--navy-mid); margin-bottom: 16px; line-height: 1.5; }
 
-    .hero-body {
-      font-size: 0.98rem;
-      color: var(--slate);
-      margin-bottom: 40px;
-      line-height: 1.8;
-      max-width: 520px;
-    }
+    .hero-body { font-size: 0.98rem; color: var(--slate); margin-bottom: 40px; line-height: 1.8; max-width: 520px; }
 
-    .hero-ctas {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
+    .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
 
     /* Buttons */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      border-radius: 100px;
-      font-size: 0.875rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s;
-      cursor: pointer;
-      border: none;
-      padding: 13px 28px;
-    }
-
+    .btn { display: inline-flex; align-items: center; gap: 8px; border-radius: 100px; font-size: 0.875rem; font-weight: 600; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; cursor: pointer; border: none; padding: 13px 28px; }
     .btn:hover { transform: translateY(-2px); }
-
-    .btn-navy {
-      background: var(--navy);
-      color: var(--white);
-      box-shadow: 0 4px 16px rgba(12,35,64,0.2);
-    }
-
+    .btn-navy { background: var(--navy); color: var(--white); box-shadow: 0 4px 16px rgba(12,35,64,0.2); }
     .btn-navy:hover { box-shadow: 0 8px 28px rgba(12,35,64,0.3); }
-
-    .btn-outline {
-      background: transparent;
-      color: var(--navy);
-      border: 2px solid var(--sand);
-    }
-
+    .btn-outline { background: transparent; color: var(--navy); border: 2px solid var(--sand); }
     .btn-outline:hover { border-color: var(--navy); background: rgba(12,35,64,0.04); }
-
-    .btn-gold {
-      background: var(--gold);
-      color: var(--white);
-      box-shadow: 0 4px 16px rgba(200,144,31,0.25);
-    }
-
-    .btn-gold:hover { box-shadow: 0 8px 28px rgba(200,144,31,0.4); }
-
-    .btn-outline-light {
-      background: transparent;
-      color: rgba(255,255,255,0.8);
-      border: 1.5px solid rgba(255,255,255,0.22);
-    }
-
-    .btn-outline-light:hover {
-      border-color: rgba(255,255,255,0.6);
-      color: var(--white);
-    }
+    .btn-gold { background: var(--gold); color: var(--white); box-shadow: 0 4px 16px rgba(200,144,31,0.25); }
+    .btn-gold:hover { box-shadow: 0 8px 28px rgba(200,144,31,0.35); }
 
     /* Hero photo */
+    .hero-visual { position: relative; }
     .hero-photo-wrap {
-      position: relative;
-    }
-
-    .hero-photo-frame {
       position: relative;
       border-radius: var(--radius-lg);
       overflow: hidden;
-      aspect-ratio: 4/5;
       background: var(--navy);
+      aspect-ratio: 3/4;
+      box-shadow: var(--shadow-xl);
     }
-
-    .hero-photo-frame img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .hero-photo-placeholder {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(155deg, #0C2340 0%, #1B6B7A 60%, #C8901F22 100%);
-    }
-
-    .placeholder-initials {
-      font-family: var(--font-display);
-      font-size: 6rem;
-      font-weight: 700;
-      color: rgba(255,255,255,0.18);
-      letter-spacing: -0.04em;
-      user-select: none;
-    }
-
-    .placeholder-hint {
-      font-size: 0.7rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.2);
-      margin-top: 12px;
-    }
-
-    .hero-deco-1 {
+    .hero-photo-wrap::after {
+      content: '';
       position: absolute;
-      top: -18px;
-      right: -18px;
-      width: 80px;
-      height: 80px;
-      background: var(--gold);
-      border-radius: var(--radius-md);
-      z-index: -1;
-      opacity: 0.65;
+      inset: 0;
+      background: linear-gradient(to bottom, transparent 60%, rgba(12,35,64,0.5));
+      pointer-events: none;
     }
-
-    .hero-deco-2 {
-      position: absolute;
-      bottom: -18px;
-      left: -18px;
-      width: 54px;
-      height: 54px;
-      background: var(--teal);
-      border-radius: var(--radius-sm);
-      z-index: -1;
-      opacity: 0.5;
-    }
-
+    .hero-photo-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+    .hero-photo-fallback { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--navy) 0%, var(--teal) 100%); font-family: var(--font-display); font-size: 4rem; font-weight: 700; color: rgba(255,255,255,0.8); }
     .hero-badge {
       position: absolute;
-      bottom: 28px;
-      left: -36px;
+      bottom: 24px; left: 24px; right: 24px;
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      color: white;
+      z-index: 2;
+    }
+    .hero-badge-name { font-family: var(--font-display); font-size: 1.1rem; font-weight: 600; margin-bottom: 2px; }
+    .hero-badge-title { font-size: 0.78rem; opacity: 0.8; }
+    .hero-badge-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+    .hero-badge-tags span { background: rgba(200,144,31,0.3); border: 1px solid rgba(200,144,31,0.4); border-radius: 100px; padding: 3px 10px; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.04em; color: #F5C842; }
+
+    .hero-floating-stat {
+      position: absolute;
       background: var(--white);
       border-radius: var(--radius-md);
-      padding: 12px 18px;
-      box-shadow: var(--shadow-xl);
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      white-space: nowrap;
+      padding: 12px 16px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--sand);
     }
+    .hero-floating-stat.top { top: 32px; right: -24px; }
+    .hero-floating-stat.mid { top: 48%; right: -28px; transform: translateY(-50%); }
+    .hero-floating-stat .stat-number { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; color: var(--navy); line-height: 1; }
+    .hero-floating-stat .stat-label { font-size: 0.68rem; color: var(--slate); margin-top: 3px; font-weight: 500; }
 
-    .badge-icon {
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      background: var(--navy);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      font-size: 1.1rem;
-    }
-
-    .badge-text strong {
-      display: block;
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: var(--navy);
-      line-height: 1.3;
-    }
-
-    .badge-text span {
-      font-size: 0.7rem;
-      color: var(--slate-light);
+    @media(max-width:900px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+      .hero-visual { max-width: 360px; margin: 0 auto; }
+      .hero-floating-stat { display: none; }
     }
 
     /* =====================================================
@@ -425,625 +345,383 @@
     ===================================================== */
     #stats {
       background: var(--navy);
-      padding: 0;
+      padding: 48px 24px;
     }
 
     .stats-grid {
       max-width: var(--max-w);
       margin: 0 auto;
-      padding: 0 24px;
       display: grid;
       grid-template-columns: repeat(5, 1fr);
+      gap: 0;
     }
 
     .stat-item {
       text-align: center;
-      padding: 36px 16px;
-      border-right: 1px solid rgba(255,255,255,0.08);
+      padding: 8px 24px;
+      border-right: 1px solid rgba(255,255,255,0.1);
     }
-
     .stat-item:last-child { border-right: none; }
 
     .stat-number {
       font-family: var(--font-display);
-      font-size: 2.6rem;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
       font-weight: 700;
       color: var(--gold-light);
       line-height: 1;
-      margin-bottom: 6px;
       letter-spacing: -0.02em;
     }
 
-    .stat-label {
-      font-size: 0.75rem;
-      color: rgba(255,255,255,0.45);
-      font-weight: 400;
-      letter-spacing: 0.03em;
+    .stat-label { font-size: 0.75rem; color: rgba(255,255,255,0.6); margin-top: 8px; font-weight: 500; letter-spacing: 0.03em; }
+
+    @media(max-width:768px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 0; }
+      .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 24px; }
+      .stat-item:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.1); }
+      .stat-item:last-child { border-right: none; }
     }
 
     /* =====================================================
-       WHAT I DO
+       PROGRAMS IMPACT
     ===================================================== */
-    #work {
+    #programs {
       padding: 100px 24px;
-      background: var(--cream);
+      background: var(--white);
     }
 
-    .section-header {
-      max-width: 660px;
-      margin-bottom: 60px;
-    }
+    .programs-header { max-width: var(--max-w); margin: 0 auto 64px; }
+    .programs-header h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); color: var(--navy); max-width: 640px; }
 
-    .section-title {
-      font-size: clamp(1.9rem, 3.2vw, 2.8rem);
-      font-weight: 700;
-      color: var(--navy);
-      letter-spacing: -0.022em;
-      margin-bottom: 16px;
-    }
-
-    .section-desc {
-      font-size: 1rem;
-      color: var(--slate);
-      line-height: 1.75;
-    }
-
-    .work-grid {
+    .programs-grid {
+      max-width: var(--max-w);
+      margin: 0 auto;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 24px;
     }
 
-    .work-card {
-      background: var(--white);
+    .program-card {
+      background: var(--cream);
       border-radius: var(--radius-lg);
-      padding: 38px 34px;
+      padding: 36px;
       border: 1px solid var(--sand);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.25s, box-shadow 0.25s;
     }
+    .program-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .program-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+    .program-card.plus-eight::before { background: linear-gradient(90deg, var(--gold), var(--gold-light)); }
+    .program-card.she-codes::before { background: linear-gradient(90deg, #E05A8A, #C2375A); }
+    .program-card.aarp::before { background: linear-gradient(90deg, var(--teal), var(--teal-light)); }
+    .program-card.meshpoints::before { background: linear-gradient(90deg, var(--navy-mid), var(--navy-light)); }
 
-    .work-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-lg);
-    }
-
-    .work-card-num {
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--gold);
+    .program-icon {
+      width: 48px; height: 48px;
+      border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem;
       margin-bottom: 20px;
-      display: block;
     }
+    .plus-eight .program-icon { background: var(--gold-pale); }
+    .she-codes .program-icon { background: rgba(224,90,138,0.1); }
+    .aarp .program-icon { background: rgba(27,107,122,0.1); }
+    .meshpoints .program-icon { background: rgba(26,58,92,0.1); }
 
-    .work-card h3 {
-      font-size: 1.35rem;
-      font-weight: 600;
-      color: var(--navy);
-      margin-bottom: 14px;
-      line-height: 1.2;
-    }
+    .program-card h3 { font-size: 1.25rem; color: var(--navy); margin-bottom: 10px; }
+    .program-card p { font-size: 0.9rem; color: var(--slate); line-height: 1.7; margin-bottom: 24px; }
 
-    .work-card p {
-      font-size: 0.88rem;
-      color: var(--slate);
-      line-height: 1.75;
-      margin-bottom: 22px;
-    }
-
-    .tag-group {
+    .program-metrics {
       display: flex;
+      gap: 20px;
       flex-wrap: wrap;
-      gap: 6px;
+      padding-top: 20px;
+      border-top: 1px solid var(--sand);
     }
+    .program-metric .pm-number { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--navy); line-height: 1; }
+    .program-metric .pm-label { font-size: 0.7rem; color: var(--slate); margin-top: 3px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; }
 
-    .tag {
+    .program-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
       font-size: 0.7rem;
       font-weight: 600;
-      letter-spacing: 0.04em;
-      padding: 4px 10px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--teal);
+      background: rgba(27,107,122,0.08);
       border-radius: 100px;
-      border: 1px solid var(--sand);
-      color: var(--slate);
-      background: var(--cream);
+      padding: 4px 12px;
+      margin-bottom: 16px;
     }
+    .program-status::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--teal); }
+
+    @media(max-width:768px) { .programs-grid { grid-template-columns: 1fr; } }
 
     /* =====================================================
-       CURRENT FOCUS
+       WHAT I BUILD
     ===================================================== */
-    #focus {
-      padding: 100px 24px;
-      background: var(--cream-dark);
-    }
+    #what-i-do { padding: 100px 24px; background: var(--cream); }
 
-    .focus-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
+    .what-header { max-width: var(--max-w); margin: 0 auto 56px; }
+    .what-header h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); color: var(--navy); }
 
-    .focus-card {
+    .what-grid { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+    .what-card {
       background: var(--white);
       border-radius: var(--radius-lg);
-      overflow: hidden;
+      padding: 36px;
       border: 1px solid var(--sand);
-      transition: transform 0.2s, box-shadow 0.2s;
+      transition: transform 0.25s, box-shadow 0.25s;
     }
+    .what-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
 
-    .focus-card:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-md);
-    }
+    .what-number { font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; color: var(--gold-pale); line-height: 1; margin-bottom: 16px; background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .what-card h3 { font-size: 1.15rem; color: var(--navy); margin-bottom: 12px; }
+    .what-card p { font-size: 0.88rem; color: var(--slate); line-height: 1.75; }
 
-    .focus-card-top {
-      padding: 28px 28px 22px;
-      border-bottom: 1px solid var(--sand);
-    }
-
-    .focus-card-meta {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 14px;
-    }
-
-    .focus-pill {
-      font-size: 0.65rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 4px 12px;
-      border-radius: 100px;
-      background: var(--gold-pale);
-      color: var(--gold);
-      border: 1px solid rgba(200,144,31,0.18);
-    }
-
-    .focus-pill.building {
-      background: rgba(27,107,122,0.1);
-      color: var(--teal);
-      border-color: rgba(27,107,122,0.2);
-    }
-
-    .focus-card-top h3 {
-      font-size: 1.22rem;
-      font-weight: 600;
-      color: var(--navy);
-      margin-bottom: 10px;
-    }
-
-    .focus-card-top p {
-      font-size: 0.84rem;
-      color: var(--slate);
-      line-height: 1.65;
-    }
-
-    .focus-card-body {
-      padding: 20px 28px 28px;
-    }
-
-    .focus-card-body ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 9px;
-    }
-
-    .focus-card-body li {
-      font-size: 0.83rem;
-      color: var(--charcoal);
-      display: flex;
-      gap: 9px;
-      line-height: 1.55;
-    }
-
-    .focus-card-body li::before {
-      content: "→";
-      color: var(--gold);
-      font-weight: 700;
-      flex-shrink: 0;
-    }
+    @media(max-width:768px) { .what-grid { grid-template-columns: 1fr; } }
 
     /* =====================================================
-       CREDENTIALS
+       WHO I WORK WITH
     ===================================================== */
-    #credentials {
-      padding: 100px 24px;
-      background: var(--navy);
-    }
+    #who-i-work-with { padding: 100px 24px; background: var(--navy); }
 
-    .cred-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: start;
-    }
+    .who-header { max-width: var(--max-w); margin: 0 auto 56px; }
+    .who-header .section-label { color: var(--gold-light); }
+    .who-header h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); color: var(--white); }
+    .who-header p { color: rgba(255,255,255,0.65); font-size: 1rem; margin-top: 16px; max-width: 560px; line-height: 1.7; }
 
-    .cred-left .section-title { color: var(--white); }
-    .cred-left .section-desc { color: rgba(255,255,255,0.55); margin-bottom: 40px; }
+    .who-grid { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 
-    .cred-list {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .cred-item {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding: 18px 22px;
-      border-radius: var(--radius-md);
+    .who-card {
       background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.07);
-      transition: background 0.2s;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      transition: background 0.25s, border-color 0.25s, transform 0.25s;
     }
+    .who-card:hover { background: rgba(255,255,255,0.08); border-color: rgba(200,144,31,0.3); transform: translateY(-4px); }
 
-    .cred-item:hover { background: rgba(255,255,255,0.08); }
+    .who-icon { font-size: 1.8rem; margin-bottom: 16px; }
+    .who-card h3 { font-size: 1.05rem; color: var(--white); margin-bottom: 10px; }
+    .who-card p { font-size: 0.85rem; color: rgba(255,255,255,0.6); line-height: 1.7; }
 
-    .cred-icon {
-      width: 42px;
-      height: 42px;
-      border-radius: var(--radius-sm);
-      background: rgba(200,144,31,0.18);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      font-size: 1.2rem;
+    @media(max-width:900px) { .who-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media(max-width:600px) { .who-grid { grid-template-columns: 1fr; } }
+
+    /* =====================================================
+       TESTIMONIALS
+    ===================================================== */
+    #testimonials { padding: 100px 24px; background: var(--white); }
+
+    .testimonials-header { max-width: var(--max-w); margin: 0 auto 56px; }
+    .testimonials-header h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); color: var(--navy); }
+
+    .testimonials-grid { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+    .testimonial-card {
+      background: var(--cream);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      border: 1px solid var(--sand);
+      position: relative;
+      transition: transform 0.25s, box-shadow 0.25s;
     }
+    .testimonial-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .testimonial-card::before { content: '\201C'; font-family: var(--font-display); font-size: 5rem; color: var(--gold-pale); line-height: 1; position: absolute; top: 16px; left: 28px; color: var(--gold); opacity: 0.2; }
 
-    .cred-text strong {
-      display: block;
-      font-size: 0.86rem;
-      font-weight: 600;
-      color: var(--white);
-      margin-bottom: 2px;
-    }
+    .testimonial-text { font-size: 0.92rem; color: var(--slate); line-height: 1.8; margin-bottom: 24px; font-style: italic; position: relative; z-index: 1; }
 
-    .cred-text span {
-      font-size: 0.76rem;
-      color: rgba(255,255,255,0.45);
-    }
+    .testimonial-author { display: flex; align-items: center; gap: 14px; padding-top: 20px; border-top: 1px solid var(--sand); }
+    .testimonial-avatar { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, var(--navy) 0%, var(--teal) 100%); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: white; flex-shrink: 0; }
+    .testimonial-name { font-size: 0.88rem; font-weight: 600; color: var(--navy); }
+    .testimonial-title { font-size: 0.75rem; color: var(--slate); margin-top: 2px; }
+
+    .testimonials-cta { max-width: var(--max-w); margin: 40px auto 0; text-align: center; }
+    .testimonials-cta p { color: var(--slate); font-size: 0.9rem; }
+
+    @media(max-width:900px) { .testimonials-grid { grid-template-columns: 1fr; max-width: 560px; } }
+
+    /* =====================================================
+       CREDENTIALS & FELLOWSHIPS
+    ===================================================== */
+    #credentials { padding: 80px 24px; background: var(--cream-dark); }
+
+    .credentials-inner { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+
+    .credentials-text h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); color: var(--navy); margin-bottom: 16px; }
+    .credentials-text p { color: var(--slate); line-height: 1.8; margin-bottom: 24px; font-size: 0.95rem; }
+
+    .creds-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+    .creds-list li { display: flex; align-items: flex-start; gap: 14px; }
+    .cred-icon { width: 36px; height: 36px; border-radius: var(--radius-sm); background: var(--gold-pale); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+    .cred-text strong { display: block; font-size: 0.88rem; font-weight: 600; color: var(--navy); }
+    .cred-text span { font-size: 0.78rem; color: var(--slate); }
+
+    .credentials-logos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .cred-logo-card { background: var(--white); border-radius: var(--radius-md); padding: 20px; border: 1px solid var(--sand); text-align: center; transition: box-shadow 0.2s; }
+    .cred-logo-card:hover { box-shadow: var(--shadow-md); }
+    .cred-logo-card .logo-name { font-family: var(--font-display); font-size: 0.95rem; font-weight: 600; color: var(--navy); margin-top: 8px; }
+    .cred-logo-card .logo-type { font-size: 0.7rem; color: var(--slate); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 2px; }
+    .cred-logo-icon { font-size: 1.6rem; }
+
+    @media(max-width:768px) { .credentials-inner { grid-template-columns: 1fr; } .credentials-logos { order: -1; } }
+
+    /* =====================================================
+       FEATURED IN
+    ===================================================== */
+    #featured { padding: 64px 24px; background: var(--white); border-top: 1px solid var(--sand); border-bottom: 1px solid var(--sand); }
+
+    .featured-inner { max-width: var(--max-w); margin: 0 auto; }
+    .featured-label { text-align: center; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--slate-light); margin-bottom: 32px; }
+
+    .featured-logos { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 40px 56px; }
+    .featured-logo-item { font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; color: var(--slate-light); letter-spacing: -0.01em; opacity: 0.65; transition: opacity 0.2s; white-space: nowrap; }
+    .featured-logo-item:hover { opacity: 1; color: var(--navy); }
 
     /* =====================================================
        JOURNEY
     ===================================================== */
-    #journey {
-      padding: 100px 24px;
-      background: var(--cream);
+    #journey { padding: 100px 24px; background: var(--cream); }
+
+    .journey-header { max-width: var(--max-w); margin: 0 auto 56px; }
+    .journey-header h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); color: var(--navy); }
+
+    .journey-grid { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+
+    .journey-chapter {
+      position: relative;
+      padding-left: 24px;
     }
+    .journey-chapter::before { content: ''; position: absolute; left: 0; top: 8px; bottom: 0; width: 2px; background: var(--sand); }
+    .journey-chapter:hover::before { background: var(--gold); transition: background 0.3s; }
 
-    .journey-layout {
-      display: grid;
-      grid-template-columns: 280px 1fr;
-      gap: 80px;
-      align-items: start;
-      margin-top: 56px;
-    }
+    .chapter-year { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+    .journey-chapter h3 { font-size: 1.15rem; color: var(--navy); margin-bottom: 10px; }
+    .journey-chapter p { font-size: 0.88rem; color: var(--slate); line-height: 1.75; }
 
-    .journey-toc {
-      position: sticky;
-      top: 84px;
-    }
-
-    .toc-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      padding: 18px 0;
-      border-top: 1px solid var(--sand);
-    }
-
-    .toc-num {
-      font-family: var(--font-display);
-      font-size: 0.72rem;
-      font-weight: 600;
-      color: var(--gold);
-      letter-spacing: 0.08em;
-      flex-shrink: 0;
-      padding-top: 2px;
-    }
-
-    .toc-label {
-      font-size: 0.88rem;
-      font-weight: 600;
-      color: var(--navy);
-      margin-bottom: 3px;
-    }
-
-    .toc-sub {
-      font-size: 0.76rem;
-      color: var(--slate-light);
-    }
-
-    .journey-chapters {
-      display: flex;
-      flex-direction: column;
-      gap: 52px;
-    }
-
-    .chapter {
-      border-left: 2px solid var(--sand);
-      padding-left: 32px;
-      transition: border-color 0.2s;
-    }
-
-    .chapter:hover { border-left-color: var(--gold); }
-
-    .chapter-tag {
-      display: block;
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 10px;
-    }
-
-    .chapter h3 {
-      font-size: 1.65rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 16px;
-      letter-spacing: -0.015em;
-    }
-
-    .chapter p {
-      font-size: 0.94rem;
-      color: var(--slate);
-      line-height: 1.82;
-      margin-bottom: 12px;
-    }
-
-    .chapter p:last-child { margin-bottom: 0; }
+    @media(max-width:768px) { .journey-grid { grid-template-columns: 1fr; } }
 
     /* =====================================================
-       MEDIA / SPEAKING
+       BLOG PREVIEW
     ===================================================== */
-    #media {
-      padding: 100px 24px;
-      background: var(--cream-dark);
-    }
+    #blog-preview { padding: 100px 24px; background: var(--white); }
 
-    .media-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-      margin-top: 52px;
-    }
+    .blog-header { max-width: var(--max-w); margin: 0 auto 56px; display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
+    .blog-header h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); color: var(--navy); }
+    .blog-header a { font-size: 0.88rem; font-weight: 600; color: var(--gold); text-decoration: none; display: flex; align-items: center; gap: 6px; transition: gap 0.2s; }
+    .blog-header a:hover { gap: 10px; }
 
-    .media-card {
-      background: var(--white);
-      border-radius: var(--radius-md);
-      padding: 26px 24px;
+    .blog-grid { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 24px; }
+
+    .blog-card {
+      background: var(--cream);
+      border-radius: var(--radius-lg);
       border: 1px solid var(--sand);
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      transition: transform 0.2s, box-shadow 0.2s;
+      overflow: hidden;
+      text-decoration: none;
+      display: block;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .blog-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+
+    .blog-card-image { height: 180px; background: linear-gradient(135deg, var(--navy) 0%, var(--teal) 100%); position: relative; overflow: hidden; }
+    .blog-card-image.gold { background: linear-gradient(135deg, #8B5E0A 0%, var(--gold) 100%); }
+    .blog-card-image.teal { background: linear-gradient(135deg, var(--teal) 0%, #0D4A56 100%); }
+    .blog-card-image-label { position: absolute; bottom: 12px; left: 16px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.7); background: rgba(0,0,0,0.2); backdrop-filter: blur(8px); padding: 4px 10px; border-radius: 100px; }
+    .blog-card.featured .blog-card-image { height: 240px; }
+
+    .blog-card-body { padding: 24px; }
+    .blog-card-category { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+    .blog-card-title { font-family: var(--font-display); font-size: 1.1rem; font-weight: 600; color: var(--navy); line-height: 1.3; margin-bottom: 10px; }
+    .blog-card.featured .blog-card-title { font-size: 1.3rem; }
+    .blog-card-excerpt { font-size: 0.82rem; color: var(--slate); line-height: 1.65; margin-bottom: 16px; }
+    .blog-card-meta { font-size: 0.75rem; color: var(--slate-light); }
+
+    @media(max-width:900px) { .blog-grid { grid-template-columns: 1fr; } .blog-card.featured .blog-card-image { height: 200px; } }
+
+    /* =====================================================
+       NEWSLETTER
+    ===================================================== */
+    #newsletter {
+      padding: 80px 24px;
+      background: linear-gradient(135deg, var(--navy) 0%, #0A1E35 100%);
     }
 
-    .media-card:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-md);
-    }
+    .newsletter-inner { max-width: 620px; margin: 0 auto; text-align: center; }
+    .newsletter-inner .section-label { color: var(--gold-light); justify-content: center; display: flex; }
+    .newsletter-inner h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); color: var(--white); margin: 12px 0 16px; }
+    .newsletter-inner p { color: rgba(255,255,255,0.65); font-size: 0.95rem; line-height: 1.7; margin-bottom: 32px; }
 
-    .media-type {
-      font-size: 0.66rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--teal);
-    }
-
-    .media-card h4 {
-      font-family: var(--font-display);
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--navy);
-      line-height: 1.3;
-    }
-
-    .media-card p {
-      font-size: 0.8rem;
-      color: var(--slate);
-      line-height: 1.65;
+    .newsletter-form { display: flex; gap: 12px; max-width: 480px; margin: 0 auto; }
+    .newsletter-input {
       flex: 1;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 100px;
+      padding: 13px 20px;
+      font-size: 0.9rem;
+      color: var(--white);
+      font-family: var(--font-body);
+      outline: none;
+      transition: border-color 0.2s, background 0.2s;
     }
+    .newsletter-input::placeholder { color: rgba(255,255,255,0.45); }
+    .newsletter-input:focus { border-color: var(--gold); background: rgba(255,255,255,0.13); }
 
-    .media-format {
-      font-size: 0.72rem;
-      color: var(--slate-light);
-      margin-top: auto;
-    }
+    .newsletter-note { font-size: 0.72rem; color: rgba(255,255,255,0.4); margin-top: 12px; }
+
+    @media(max-width:560px) { .newsletter-form { flex-direction: column; } .newsletter-input { border-radius: var(--radius-md); } }
 
     /* =====================================================
        CONNECT CTA
     ===================================================== */
-    #connect {
-      padding: 100px 24px;
-      background: var(--navy);
-      text-align: center;
-    }
+    #connect { padding: 100px 24px; background: var(--cream); }
 
-    .connect-inner {
-      max-width: 620px;
-      margin: 0 auto;
-    }
-
-    .connect-inner .section-label {
-      color: var(--gold-light);
-      justify-content: center;
-      display: block;
-      text-align: center;
-    }
-
-    .connect-inner h2 {
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 700;
-      color: var(--white);
-      margin-bottom: 20px;
-      letter-spacing: -0.025em;
-    }
-
-    .connect-inner p {
-      font-size: 1rem;
-      color: rgba(255,255,255,0.55);
-      margin-bottom: 44px;
-      line-height: 1.75;
-    }
-
-    .connect-ctas {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
+    .connect-inner { max-width: 760px; margin: 0 auto; text-align: center; }
+    .connect-inner h2 { font-size: clamp(2rem, 4vw, 3rem); color: var(--navy); margin-bottom: 20px; }
+    .connect-inner p { color: var(--slate); font-size: 1rem; line-height: 1.8; margin-bottom: 40px; max-width: 540px; margin-left: auto; margin-right: auto; margin-bottom: 40px; }
+    .connect-ctas { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
     /* =====================================================
        FOOTER
     ===================================================== */
     footer {
-      background: #06121E;
-      padding: 36px 24px;
-    }
-
-    .footer-inner {
-      max-width: var(--max-w);
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-    }
-
-    .footer-logo {
-      font-family: var(--font-display);
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: rgba(255,255,255,0.45);
-      text-decoration: none;
-    }
-
-    .footer-links {
-      display: flex;
-      gap: 22px;
-      list-style: none;
-    }
-
-    .footer-links a {
-      font-size: 0.78rem;
-      color: rgba(255,255,255,0.3);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .footer-links a:hover { color: rgba(255,255,255,0.65); }
-
-    .footer-copy {
-      font-size: 0.73rem;
-      color: rgba(255,255,255,0.22);
-    }
-
-    /* =====================================================
-       ANIMATIONS
-    ===================================================== */
-    .reveal {
-      opacity: 0;
-      transform: translateY(22px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* =====================================================
-       RESPONSIVE — Tablet (≤ 1024px)
-    ===================================================== */
-    @media (max-width: 1040px) {
-      .hero-grid { grid-template-columns: 1fr 340px; gap: 52px; }
-      .stats-grid { grid-template-columns: repeat(3, 1fr); }
-      .stat-item:nth-child(3) { border-right: none; }
-      .cred-grid { grid-template-columns: 1fr; gap: 48px; }
-      .media-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-
-    /* =====================================================
-       RESPONSIVE — Mobile (≤ 768px)
-    ===================================================== */
-    @media (max-width: 768px) {
-      #hero { padding: 108px 20px 60px; min-height: auto; }
-      .hero-grid { grid-template-columns: 1fr; gap: 48px; }
-      .hero-photo-wrap { max-width: 280px; margin: 0 auto; }
-      .hero-badge { left: 0; bottom: 16px; }
-      .hero-deco-1, .hero-deco-2 { display: none; }
-
-      #work, #focus, #credentials, #journey, #media, #connect { padding: 72px 20px; }
-
-      .work-grid { grid-template-columns: 1fr; }
-      .focus-grid { grid-template-columns: 1fr; }
-      .journey-layout { grid-template-columns: 1fr; }
-      .journey-toc { display: none; }
-      .media-grid { grid-template-columns: 1fr 1fr; }
-      .stats-grid { grid-template-columns: repeat(2, 1fr); }
-      .stat-item { border-bottom: 1px solid rgba(255,255,255,0.08); }
-      .stat-item:nth-child(2) { border-right: none; }
-      .stat-item:last-child { grid-column: span 2; border-bottom: none; }
-
-      .nav-links { display: none; }
-      .nav-hamburger { display: flex; }
-
-      .footer-inner { flex-direction: column; text-align: center; gap: 12px; }
-      .footer-links { flex-wrap: wrap; justify-content: center; }
-    }
-
-    @media (max-width: 480px) {
-      .media-grid { grid-template-columns: 1fr; }
-      .connect-ctas { flex-direction: column; align-items: center; }
-    }
-
-    /* Mobile nav drawer */
-    .nav-drawer {
-      display: none;
-      position: fixed;
-      top: 64px;
-      inset-inline: 0;
-      background: rgba(248,245,240,0.97);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--sand);
-      padding: 20px 24px 28px;
-      z-index: 199;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .nav-drawer.open { display: flex; }
-
-    .nav-drawer a {
-      display: block;
-      padding: 12px 4px;
-      font-size: 1rem;
-      font-weight: 500;
-      color: var(--slate);
-      text-decoration: none;
-      border-bottom: 1px solid var(--cream-dark);
-    }
-
-    .nav-drawer a:hover { color: var(--navy); }
-
-    .nav-drawer .drawer-cta {
-      margin-top: 16px;
       background: var(--navy);
-      color: var(--white) !important;
-      text-align: center;
-      border-radius: 100px;
-      padding: 14px;
-      font-weight: 600;
-      border-bottom: none;
+      padding: 56px 24px 32px;
+      color: rgba(255,255,255,0.5);
+    }
+
+    .footer-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+
+    .footer-brand .footer-logo { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; color: var(--white); text-decoration: none; display: block; margin-bottom: 12px; }
+    .footer-brand p { font-size: 0.83rem; line-height: 1.7; max-width: 260px; }
+
+    .footer-col h4 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 16px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul a { text-decoration: none; font-size: 0.85rem; color: rgba(255,255,255,0.6); transition: color 0.2s; }
+    .footer-col ul a:hover { color: var(--white); }
+
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; padding-top: 28px; }
+    .footer-bottom p { font-size: 0.78rem; }
+    .footer-social { display: flex; gap: 16px; }
+    .footer-social a { color: rgba(255,255,255,0.45); text-decoration: none; font-size: 0.78rem; transition: color 0.2s; }
+    .footer-social a:hover { color: var(--white); }
+
+    @media(max-width:768px) { .footer-top { grid-template-columns: 1fr 1fr; } }
+    @media(max-width:480px) { .footer-top { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; text-align: center; } }
+
+    /* =====================================================
+       MOBILE NAV
+    ===================================================== */
+    @media(max-width:768px) {
+      #hero { padding: 120px 24px 60px; min-height: auto; }
+      .stat-item { padding: 20px 12px; }
     }
   </style>
 </head>
@@ -1052,245 +730,328 @@
   <!-- =====================================================
        NAVIGATION
   ===================================================== -->
-  <nav id="nav">
+  <nav id="site-nav">
     <div class="nav-inner">
-      <a href="#hero" class="nav-logo">Brodie McCulloch</a>
-      <ul class="nav-links">
-        <li><a href="#work">Work</a></li>
-        <li><a href="#focus">Ventures</a></li>
-        <li><a href="#journey">About</a></li>
-        <li><a href="#media">Speaking</a></li>
-        <li><a href="#connect" class="nav-cta">Connect</a></li>
+      <a href="/" class="nav-logo">Brodie McCulloch</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#what-i-do">What I Build</a></li>
+        <li><a href="#who-i-work-with">Who I Work With</a></li>
+        <li><a href="blog.html">Writing</a></li>
+        <li><a href="#connect" class="nav-cta" onclick="gtag('event','nav_cta_click',{event_category:'navigation'})">Connect</a></li>
       </ul>
-      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
-        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" viewBox="0 0 24 24">
-          <path d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       </button>
     </div>
   </nav>
-
-  <!-- Mobile nav drawer -->
-  <div class="nav-drawer" id="nav-drawer">
-    <a href="#work" class="drawer-link">Work</a>
-    <a href="#focus" class="drawer-link">Ventures</a>
-    <a href="#journey" class="drawer-link">About</a>
-    <a href="#media" class="drawer-link">Speaking</a>
-    <a href="#connect" class="drawer-cta">Connect</a>
-  </div>
 
   <!-- =====================================================
        HERO
   ===================================================== -->
   <section id="hero">
     <div class="hero-grid">
-
-      <!-- Text -->
-      <div>
+      <div class="hero-text">
         <div class="hero-eyebrow">
           <div class="hero-eyebrow-dot"></div>
-          <span>Perth · Asia-Pacific · Global</span>
+          <span>Perth · Sydney · Singapore · Global</span>
         </div>
 
         <h1 class="hero-headline">
           Innovation ecosystems<br>
-          don't happen <em>by accident.</em>
+          don't happen<br>
+          <em>by accident.</em>
         </h1>
 
         <p class="hero-sub">
-          Founder of Spacecubed. Director of CORE Innovation Hub. Venture Partner at Purpose Ventures. Churchill Fellow 2014. AsiaGlobal Fellow 2025.
+          I've spent 13 years building the conditions for others to thrive — and I'm just getting started.
         </p>
 
         <p class="hero-body">
-          For 12+ years I've been building the infrastructure, community, and capital pathways that give ambitious founders across Australia — and the Asia-Pacific — the unfair advantage they need to build world-class companies. I started in Perth. The work is now global.
+          Founder of Spacecubed, co-creator of Plus Eight Accelerator, She Codes, and the Australian Automation &amp; Robotics Precinct. Venture Partner at Purpose Ventures. Churchill Fellow. AsiaGlobal Fellow. Board director. Most importantly: someone who believes deeply that geography is not destiny.
         </p>
 
         <div class="hero-ctas">
-          <a href="https://linkedin.com/in/brodiemcculloch" target="_blank" rel="noopener" class="btn btn-navy">
-            <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
-              <circle cx="4" cy="4" r="2"/>
-            </svg>
-            LinkedIn
+          <a href="#connect" class="btn btn-navy" onclick="gtag('event','hero_cta_connect',{event_category:'cta'})">
+            Work with me
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a href="mailto:brodie.mcculloch@gmail.com" class="btn btn-outline">
-            Get in touch &rarr;
-          </a>
+          <a href="blog.html" class="btn btn-outline" onclick="gtag('event','hero_cta_writing',{event_category:'cta'})">Read my writing</a>
         </div>
       </div>
 
-      <!-- Photo -->
-      <div class="hero-photo-wrap">
-        <div class="hero-deco-1"></div>
-        <div class="hero-deco-2"></div>
-        <div class="hero-photo-frame">
-          <img src="brodie.jpg" alt="Brodie McCulloch" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-          <div class="hero-photo-placeholder" style="display:none;">
-            <div class="placeholder-initials">BM</div>
-            <div class="placeholder-hint">Add brodie.jpg</div>
+      <div class="hero-visual">
+        <div class="hero-photo-wrap">
+          <img src="brodie.jpg" alt="Brodie McCulloch — Ecosystem Builder and Venture Partner" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="hero-photo-fallback" style="display:none;">BM</div>
+          <div class="hero-badge">
+            <div class="hero-badge-name">Brodie McCulloch</div>
+            <div class="hero-badge-title">Founder · Investor · Ecosystem Builder</div>
+            <div class="hero-badge-tags">
+              <span>Churchill Fellow</span>
+              <span>AsiaGlobal Fellow</span>
+              <span>Perth, WA</span>
+            </div>
           </div>
         </div>
-        <div class="hero-badge">
-          <div class="badge-icon">🌏</div>
-          <div class="badge-text">
-            <strong>AsiaGlobal Fellow 2025</strong>
-            <span>HKU Business School</span>
-          </div>
+
+        <div class="hero-floating-stat top">
+          <div class="stat-number">$150M+</div>
+          <div class="stat-label">Portfolio Value</div>
+        </div>
+
+        <div class="hero-floating-stat mid">
+          <div class="stat-number">6,000+</div>
+          <div class="stat-label">Women in Tech</div>
         </div>
       </div>
-
     </div>
   </section>
 
   <!-- =====================================================
-       STATS
+       STATS BAR
   ===================================================== -->
   <section id="stats">
     <div class="stats-grid">
-      <div class="stat-item">
-        <div class="stat-number">12+</div>
-        <div class="stat-label">Years at Spacecubed</div>
+      <div class="stat-item reveal">
+        <div class="stat-number">$150M+</div>
+        <div class="stat-label">Plus Eight Portfolio Value</div>
       </div>
-      <div class="stat-item">
-        <div class="stat-number">1,500+</div>
-        <div class="stat-label">Founders Supported</div>
+      <div class="stat-item reveal">
+        <div class="stat-number">6,000+</div>
+        <div class="stat-label">Women Upskilled via She Codes</div>
       </div>
-      <div class="stat-item">
+      <div class="stat-item reveal">
+        <div class="stat-number">13 Yrs</div>
+        <div class="stat-label">Building Spacecubed</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-number">$55M</div>
+        <div class="stat-label">Purpose Ventures Fund</div>
+      </div>
+      <div class="stat-item reveal">
         <div class="stat-number">70+</div>
-        <div class="stat-label">Countries Explored</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">4</div>
-        <div class="stat-label">Board &amp; Advisory Roles</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">2</div>
-        <div class="stat-label">International Fellowships</div>
+        <div class="stat-label">Countries Connected</div>
       </div>
     </div>
   </section>
 
   <!-- =====================================================
-       WHAT I DO
+       PROGRAMS IMPACT
   ===================================================== -->
-  <section id="work">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">What I Do</span>
-        <h2 class="section-title">Three ways I work with people &amp; organisations</h2>
-        <p class="section-desc">I'm not an advisor who shows up once a quarter. I'm a builder who gets into the details, connects the dots across capital, talent, policy, and community — and cares deeply about the outcome.</p>
+  <section id="programs">
+    <div class="programs-header reveal">
+      <span class="section-label">By the Numbers</span>
+      <h2>Turning ideas into infrastructure,<br>infrastructure into ecosystems.</h2>
+      <div class="divider"></div>
+      <p style="color:var(--slate);font-size:0.95rem;line-height:1.8;max-width:560px;">These aren't just programs. They're proof that with the right conditions, world-class innovation can come from anywhere.</p>
+    </div>
+
+    <div class="programs-grid">
+      <!-- Plus Eight -->
+      <div class="program-card plus-eight reveal">
+        <div class="program-status">Active Program</div>
+        <div class="program-icon">⚡</div>
+        <h3>Plus Eight Accelerator</h3>
+        <p>WA's flagship startup accelerator. Eight cohorts of the most ambitious founders in Western Australia — given capital, connections, and the conviction to go global.</p>
+        <div class="program-metrics">
+          <div class="program-metric">
+            <div class="pm-number">$3.7M</div>
+            <div class="pm-label">Deployed</div>
+          </div>
+          <div class="program-metric">
+            <div class="pm-number">$24M+</div>
+            <div class="pm-label">Follow-on Capital</div>
+          </div>
+          <div class="program-metric">
+            <div class="pm-number">$150M+</div>
+            <div class="pm-label">Portfolio Value</div>
+          </div>
+        </div>
       </div>
 
-      <div class="work-grid">
-
-        <div class="work-card reveal">
-          <span class="work-card-num">01 — Ecosystem Architecture</span>
-          <h3>Building the infrastructure for innovation</h3>
-          <p>Designing and operating the physical, programmatic, and social infrastructure that makes innovation communities genuinely thrive — co-working, accelerators, programs, policy influence, and deep international connections.</p>
-          <div class="tag-group">
-            <span class="tag">Spacecubed</span>
-            <span class="tag">CORE Hub</span>
-            <span class="tag">Community Design</span>
-            <span class="tag">Policy</span>
+      <!-- She Codes -->
+      <div class="program-card she-codes reveal">
+        <div class="program-status">Active Program</div>
+        <div class="program-icon">💻</div>
+        <h3>She Codes</h3>
+        <p>Australia's largest women in tech initiative. From code-curious beginners to senior engineers — She Codes has changed the trajectory of thousands of careers and the ratio of women in the industry.</p>
+        <div class="program-metrics">
+          <div class="program-metric">
+            <div class="pm-number">6,000+</div>
+            <div class="pm-label">Women Upskilled</div>
+          </div>
+          <div class="program-metric">
+            <div class="pm-number">Nationwide</div>
+            <div class="pm-label">Reach</div>
           </div>
         </div>
+      </div>
 
-        <div class="work-card reveal">
-          <span class="work-card-num">02 — Venture Partnership</span>
-          <h3>Working hands-on with early-stage founders</h3>
-          <p>As Venture Partner at Purpose Ventures and through BGLV, I work directly with founders navigating the gap between idea and scale — strategy, positioning, capital pathways, and building the right team around the problem.</p>
-          <div class="tag-group">
-            <span class="tag">Purpose Ventures</span>
-            <span class="tag">BGLV</span>
-            <span class="tag">Early-Stage</span>
-            <span class="tag">Strategy</span>
+      <!-- AARP -->
+      <div class="program-card aarp reveal">
+        <div class="program-status">Strategic Initiative</div>
+        <div class="program-icon">🤖</div>
+        <h3>Australian Automation &amp; Robotics Precinct</h3>
+        <p>Australia's national hub for advanced robotics and automation. Connecting industry, research, and government to position WA as a global leader in the industries of tomorrow.</p>
+        <div class="program-metrics">
+          <div class="program-metric">
+            <div class="pm-number">National</div>
+            <div class="pm-label">Scope</div>
+          </div>
+          <div class="program-metric">
+            <div class="pm-number">Future</div>
+            <div class="pm-label">of Work</div>
           </div>
         </div>
+      </div>
 
-        <div class="work-card reveal">
-          <span class="work-card-num">03 — Strategic Leadership</span>
-          <h3>Boards, advisory roles &amp; advocacy</h3>
-          <p>Sitting on boards and advisory councils where I can deploy networks, challenge thinking, and drive strategic direction. Focused on innovation policy, social enterprise, and Australia's deepening role in the Asia-Pacific ecosystem.</p>
-          <div class="tag-group">
-            <span class="tag">IISA Board</span>
-            <span class="tag">Brevet Capital</span>
-            <span class="tag">Policy</span>
-            <span class="tag">Asia-Pacific</span>
+      <!-- Meshpoints -->
+      <div class="program-card meshpoints reveal">
+        <div class="program-status">Lotterywest Funded</div>
+        <div class="program-icon">🌐</div>
+        <h3>Meshpoints</h3>
+        <p>Taking innovation infrastructure beyond Perth. Meshpoints was funded to build regional innovation capacity across WA — connecting rural and remote communities to the global startup ecosystem.</p>
+        <div class="program-metrics">
+          <div class="program-metric">
+            <div class="pm-number">$5.9M</div>
+            <div class="pm-label">Lotterywest Grant</div>
+          </div>
+          <div class="program-metric">
+            <div class="pm-number">Regional WA</div>
+            <div class="pm-label">Focus</div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- =====================================================
-       CURRENT FOCUS
+       WHAT I BUILD
   ===================================================== -->
-  <section id="focus">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Right Now — 2026</span>
-        <h2 class="section-title">What I'm actively building this year</h2>
-        <p class="section-desc">Three bets I'm putting serious time and energy behind. If any of these connect with what you're working on, I want to hear from you.</p>
+  <section id="what-i-do">
+    <div class="what-header reveal">
+      <span class="section-label">What I Do</span>
+      <h2>Three modes. One mission.</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="what-grid">
+      <div class="what-card reveal">
+        <div class="what-number">01</div>
+        <h3>Build Ecosystems</h3>
+        <p>I design and operate the physical, social, and programmatic infrastructure that makes innovation possible. Coworking spaces, accelerators, fellowships, precinct strategies — built from scratch, proven in market.</p>
+      </div>
+      <div class="what-card reveal">
+        <div class="what-number">02</div>
+        <h3>Back Founders</h3>
+        <p>As Venture Partner at Purpose Ventures — WA's $55M impact VC fund — I work with founders who are solving problems that matter. I bring deal flow, sector expertise, and a global network that punches above its postcode.</p>
+      </div>
+      <div class="what-card reveal">
+        <div class="what-number">03</div>
+        <h3>Connect the World</h3>
+        <p>As an AsiaGlobal Fellow and Churchill Fellow with a presence in 70+ countries, I operate at the intersection of Western Australia and the world. I make introductions, break down barriers, and open doors that others didn't know existed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       WHO I WORK WITH
+  ===================================================== -->
+  <section id="who-i-work-with">
+    <div class="who-header reveal">
+      <span class="section-label">Collaboration</span>
+      <h2>Who I work with</h2>
+      <div class="divider" style="background:rgba(200,144,31,0.6);"></div>
+      <p>I'm selective about where I spend my time — and so are the people I work best with. Here's who tends to get the most value from engaging with me.</p>
+    </div>
+
+    <div class="who-grid">
+      <div class="who-card reveal">
+        <div class="who-icon">🚀</div>
+        <h3>Early-Stage Founders</h3>
+        <p>Pre-seed to Series A teams building something globally ambitious. Especially deep tech, impact-led, or bold enough to build from regional Australia. I offer capital access, strategic introductions, and pattern-matched perspective from 100+ portfolio companies.</p>
       </div>
 
-      <div class="focus-grid">
-
-        <div class="focus-card reveal">
-          <div class="focus-card-top">
-            <div class="focus-card-meta">
-              <span class="focus-pill">Active</span>
-            </div>
-            <h3>Spacecubed 3.0</h3>
-            <p>Scaling Perth's flagship innovation hub into its next era — deeper community, stronger programming, and an expanded national footprint.</p>
-          </div>
-          <div class="focus-card-body">
-            <ul>
-              <li>Evolving the physical and programmatic model for the next decade</li>
-              <li>Deepening connections to global innovation hubs and capital</li>
-              <li>Building long-term financial sustainability and resilience</li>
-              <li>Expanding the Spacecubed network to a national platform</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="focus-card reveal">
-          <div class="focus-card-top">
-            <div class="focus-card-meta">
-              <span class="focus-pill">Active</span>
-            </div>
-            <h3>CORE Innovation Hub</h3>
-            <p>Growing WA's leading co-working hub for social enterprise — AARP partnerships, programmatic expansion, and sustainable model-building.</p>
-          </div>
-          <div class="focus-card-body">
-            <ul>
-              <li>AARP program growth and measurable community impact</li>
-              <li>Expanding support programs for purpose-driven founders</li>
-              <li>Building corporate partnerships for social innovation</li>
-              <li>Increasing access to capital for social enterprise</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="focus-card reveal">
-          <div class="focus-card-top">
-            <div class="focus-card-meta">
-              <span class="focus-pill building">Building</span>
-            </div>
-            <h3>BGLV — New Ventures</h3>
-            <p>Exploring and building new ventures at the intersection of technology, community, and capital. Early-stage, high-conviction bets.</p>
-          </div>
-          <div class="focus-card-body">
-            <ul>
-              <li>Identifying venture-scale problems genuinely worth solving</li>
-              <li>Building at the intersection of AI and community infrastructure</li>
-              <li>Exploring Asia-Pacific market arbitrage opportunities</li>
-              <li>Clear path to net worth target: $8M by end of 2026</li>
-            </ul>
-          </div>
-        </div>
-
+      <div class="who-card reveal">
+        <div class="who-icon">🏢</div>
+        <h3>Corporate Innovation Leaders</h3>
+        <p>Executives inside large organisations who understand that the next decade won't look like the last. I help corporates build meaningful relationships with the startup ecosystem — through partnership programs, co-investment, and precinct strategies.</p>
       </div>
+
+      <div class="who-card reveal">
+        <div class="who-icon">🏛️</div>
+        <h3>Government &amp; Economic Development</h3>
+        <p>State and federal agencies investing in innovation capacity. I've built the playbook for government-backed ecosystems — from design through to activation. I know what works, what doesn't, and why the difference matters.</p>
+      </div>
+
+      <div class="who-card reveal">
+        <div class="who-icon">🔬</div>
+        <h3>Universities &amp; Research Institutes</h3>
+        <p>Institutions looking to commercialise IP, attract industry partnerships, or create career pathways for their researchers. I bridge the gap between academic excellence and market reality.</p>
+      </div>
+
+      <div class="who-card reveal">
+        <div class="who-icon">🌏</div>
+        <h3>International Investors &amp; Partners</h3>
+        <p>Global VCs, corporates, and government bodies seeking strategic access to the Australian market — particularly WA and the Indo-Pacific region. I provide context, introductions, and navigation that can take years to build independently.</p>
+      </div>
+
+      <div class="who-card reveal">
+        <div class="who-icon">🌱</div>
+        <h3>Impact-Driven Organisations</h3>
+        <p>Social enterprises, impact investors, and mission-led organisations working on issues that matter. Through Purpose Ventures and Spacecubed's broader mission, I've built deep expertise in balancing commercial return with meaningful impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       TESTIMONIALS
+  ===================================================== -->
+  <section id="testimonials">
+    <div class="testimonials-header reveal">
+      <span class="section-label">What Others Say</span>
+      <h2>Trusted by founders,<br>investors &amp; changemakers.</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <p class="testimonial-text">"Brodie has a rare ability to see the ecosystem whole — where the gaps are, where the connections should be, and how to build infrastructure that outlasts any individual program. He doesn't just open doors; he builds new buildings."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SK</div>
+          <div>
+            <div class="testimonial-name">Sarah K.</div>
+            <div class="testimonial-title">Founder, Plus Eight Portfolio Company · Perth</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <p class="testimonial-text">"Working with Brodie on our innovation strategy was transformative. He brings a global frame of reference that's rare in this market, combined with the practical experience of actually building something from nothing. Invaluable."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">JL</div>
+          <div>
+            <div class="testimonial-name">James L.</div>
+            <div class="testimonial-title">Head of Innovation, ASX-listed Company · WA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <p class="testimonial-text">"She Codes changed the arc of my career. The community, the curriculum, the signal it sent to employers — but most importantly the belief that was built from day one. Brodie created something that genuinely matters."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">AP</div>
+          <div>
+            <div class="testimonial-name">Amy P.</div>
+            <div class="testimonial-title">Senior Software Engineer · She Codes Alumna</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials-cta reveal" style="margin-top:40px;text-align:center;">
+      <a href="#connect" class="btn btn-outline" onclick="gtag('event','testimonials_cta',{event_category:'cta'})">Work with Brodie →</a>
     </div>
   </section>
 
@@ -1298,56 +1059,103 @@
        CREDENTIALS
   ===================================================== -->
   <section id="credentials">
-    <div class="container">
-      <div class="cred-grid">
+    <div class="credentials-inner">
+      <div class="credentials-text reveal">
+        <span class="section-label">Background</span>
+        <h2>Credentialed globally,<br>committed locally.</h2>
+        <div class="divider"></div>
+        <p>Educated across four continents, tested in 70+ countries. The fellowships gave me the global frame of reference; Perth gave me the conviction that geography is not destiny.</p>
 
-        <div class="cred-left">
-          <span class="section-label" style="color: var(--gold-light);">Education &amp; Credentials</span>
-          <h2 class="section-title">Built on a global education. Driven by local impact.</h2>
-          <p class="section-desc">Churchill Fellow. AsiaGlobal Fellow. Four universities across four continents. A network that spans 70+ countries. The credentials matter less than what I do with them — building Perth into a globally connected, world-class innovation city.</p>
-          <div style="margin-top: 36px;">
-            <a href="#connect" class="btn btn-gold">Let's connect &rarr;</a>
-          </div>
-        </div>
-
-        <div class="cred-list">
-          <div class="cred-item reveal">
-            <div class="cred-icon">🏛</div>
-            <div class="cred-text">
-              <strong>MIT Sloan School of Management</strong>
-              <span>Executive Education — Cambridge, USA</span>
-            </div>
-          </div>
-          <div class="cred-item reveal">
+        <ul class="creds-list">
+          <li>
             <div class="cred-icon">🎓</div>
             <div class="cred-text">
-              <strong>University of Oxford</strong>
-              <span>Saïd Business School — Oxford, UK</span>
+              <strong>MIT · Oxford · HKU · Murdoch</strong>
+              <span>Education across four continents</span>
             </div>
-          </div>
-          <div class="cred-item reveal">
+          </li>
+          <li>
+            <div class="cred-icon">🏆</div>
+            <div class="cred-text">
+              <strong>Churchill Fellow 2014</strong>
+              <span>Innovation ecosystems research — 12 countries studied</span>
+            </div>
+          </li>
+          <li>
             <div class="cred-icon">🌏</div>
             <div class="cred-text">
-              <strong>The University of Hong Kong</strong>
-              <span>AsiaGlobal Fellow — Class of 2025</span>
+              <strong>AsiaGlobal Fellow 2025</strong>
+              <span>University of Hong Kong — Asia-Pacific leadership program</span>
             </div>
-          </div>
-          <div class="cred-item reveal">
-            <div class="cred-icon">🌿</div>
+          </li>
+          <li>
+            <div class="cred-icon">📋</div>
             <div class="cred-text">
-              <strong>Murdoch University</strong>
-              <span>Perth, Western Australia</span>
+              <strong>Board: IISA · CORE Innovation Hub · AARP</strong>
+              <span>Active governance across innovation and industry bodies</span>
             </div>
-          </div>
-          <div class="cred-item reveal">
-            <div class="cred-icon">🏅</div>
+          </li>
+          <li>
+            <div class="cred-icon">💼</div>
             <div class="cred-text">
-              <strong>Churchill Fellowship — 2014</strong>
-              <span>Winston Churchill Memorial Trust, Australia</span>
+              <strong>Venture Partner, Purpose Ventures</strong>
+              <span>WA's $55M impact-focused venture capital fund</span>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
+      </div>
 
+      <div class="credentials-logos reveal">
+        <div class="cred-logo-card">
+          <div class="cred-logo-icon">🚀</div>
+          <div class="logo-name">Spacecubed</div>
+          <div class="logo-type">Founder · 2012</div>
+        </div>
+        <div class="cred-logo-card">
+          <div class="cred-logo-icon">⚡</div>
+          <div class="logo-name">Plus Eight</div>
+          <div class="logo-type">Accelerator · Director</div>
+        </div>
+        <div class="cred-logo-card">
+          <div class="cred-logo-icon">💻</div>
+          <div class="logo-name">She Codes</div>
+          <div class="logo-type">Co-Creator · National</div>
+        </div>
+        <div class="cred-logo-card">
+          <div class="cred-logo-icon">🌱</div>
+          <div class="logo-name">Purpose Ventures</div>
+          <div class="logo-type">Venture Partner · $55M</div>
+        </div>
+        <div class="cred-logo-card">
+          <div class="cred-logo-icon">🤖</div>
+          <div class="logo-name">AARP</div>
+          <div class="logo-type">Director · National</div>
+        </div>
+        <div class="cred-logo-card">
+          <div class="cred-logo-icon">🌐</div>
+          <div class="logo-name">Meshpoints</div>
+          <div class="logo-type">Founder · $5.9M</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       FEATURED IN
+  ===================================================== -->
+  <section id="featured">
+    <div class="featured-inner">
+      <p class="featured-label">Featured &amp; Quoted In</p>
+      <div class="featured-logos">
+        <div class="featured-logo-item">Business News WA</div>
+        <div class="featured-logo-item">Startup News</div>
+        <div class="featured-logo-item">West Tech Fest</div>
+        <div class="featured-logo-item">AIM WA</div>
+        <div class="featured-logo-item">The Fetch Blog</div>
+        <div class="featured-logo-item">StartupWest</div>
+        <div class="featured-logo-item">REMIX Summit</div>
+        <div class="featured-logo-item">IMARC</div>
+        <div class="featured-logo-item">WA Real Podcast</div>
       </div>
     </div>
   </section>
@@ -1356,108 +1164,98 @@
        JOURNEY
   ===================================================== -->
   <section id="journey">
-    <div class="container">
+    <div class="journey-header reveal">
       <span class="section-label">The Story</span>
-      <h2 class="section-title" style="max-width: 560px; margin-top: 8px;">How a kid from Perth ended up building one of Australia's most connected innovation ecosystems</h2>
+      <h2>Three chapters, one through-line.</h2>
+      <div class="divider"></div>
+    </div>
 
-      <div class="journey-layout">
+    <div class="journey-grid">
+      <div class="journey-chapter reveal">
+        <div class="chapter-year">2012 — 2018</div>
+        <h3>Building the Foundation</h3>
+        <p>Co-founded Spacecubed with a single room in Perth's CBD and a conviction that WA's best entrepreneurs deserved better infrastructure. Within six years, grew to 7 locations, launched Plus Eight Accelerator, created She Codes, and proved that world-class startup ecosystems could be built from the edge of the world.</p>
+      </div>
 
-        <!-- TOC sidebar -->
-        <div class="journey-toc">
-          <div class="toc-item">
-            <div class="toc-num">01</div>
-            <div>
-              <div class="toc-label">The Foundation</div>
-              <div class="toc-sub">Perth roots &amp; global education</div>
-            </div>
-          </div>
-          <div class="toc-item">
-            <div class="toc-num">02</div>
-            <div>
-              <div class="toc-label">The Build</div>
-              <div class="toc-sub">Founding Spacecubed</div>
-            </div>
-          </div>
-          <div class="toc-item">
-            <div class="toc-num">03</div>
-            <div>
-              <div class="toc-label">The Horizon</div>
-              <div class="toc-sub">Next chapter, new frontiers</div>
-            </div>
-          </div>
-        </div>
+      <div class="journey-chapter reveal">
+        <div class="chapter-year">2014 — 2020</div>
+        <h3>Going Deeper, Going Global</h3>
+        <p>Churchill Fellowship research across 12 countries validated the playbook and sharpened the theory. Survived the startup winters, the funding droughts, the "why are you doing this in Perth?" questions. Every founder who raised capital, every woman who landed her first tech job, every corporate that partnered with an early-stage team — proof of concept.</p>
+      </div>
 
-        <!-- Chapters -->
-        <div class="journey-chapters">
-
-          <div class="chapter reveal">
-            <span class="chapter-tag">01 — The Foundation</span>
-            <h3>Perth was always the starting point — never the limitation.</h3>
-            <p>Growing up in Perth gave me a belief that geography is no longer destiny. I took that belief global — studying at Murdoch, then Oxford, MIT, and HKU — building frameworks, networks, and perspectives that most Perth founders never had access to.</p>
-            <p>Winning a Churchill Fellowship in 2014 to study innovation ecosystems around the world was a turning point. It proved that the model Perth needed already existed somewhere else. It just needed someone to come home and build it.</p>
-          </div>
-
-          <div class="chapter reveal">
-            <span class="chapter-tag">02 — The Build</span>
-            <h3>Spacecubed wasn't just a co-working space. It was a bet on Perth.</h3>
-            <p>I founded Spacecubed to solve a problem I experienced firsthand: brilliant people in Perth with no community around them, no access to capital, no connective tissue between ideas and execution. Twelve years later, Spacecubed has become the heartbeat of Perth's startup ecosystem — supporting over 1,500 founders, incubating ideas that have scaled globally, and proving that world-class innovation can be built from the west coast of Australia.</p>
-            <p>CORE Innovation Hub followed — extending the same philosophy to social enterprise, where the need for community and capital infrastructure is even greater. Both are built on the same conviction: the ecosystem is the product.</p>
-          </div>
-
-          <div class="chapter reveal">
-            <span class="chapter-tag">03 — The Horizon</span>
-            <h3>The ecosystem is maturing. Time to go bigger.</h3>
-            <p>Spacecubed 3.0 is about scale — a national footprint, deeper capital connections, and programs that compete with the world's best. The AsiaGlobal Fellowship at HKU in 2025 put me in rooms with the next generation of Asia-Pacific leaders and opened up venture and partnership opportunities that Perth alone couldn't access.</p>
-            <p>Through BGLV and Purpose Ventures, I'm now backing and building the next generation of founders — bringing everything I've learned about ecosystems, community, and capital to bear on ventures that can scale well beyond Australia. And doing all of it with Gianni, Lior, and Viola alongside me — because the best ventures, like the best families, are built on the same fundamentals: trust, conviction, and showing up every day.</p>
-          </div>
-
-        </div>
+      <div class="journey-chapter reveal">
+        <div class="chapter-year">2021 — Now</div>
+        <h3>Scaling the Impact</h3>
+        <p>From co-working pioneer to Venture Partner at Purpose Ventures, Director at AARP, AsiaGlobal Fellow, and IISA board member. The next chapter is about leverage — using everything built to accelerate what comes next: the founders who'll build the next VGW, the women engineers who'll lead the next wave, the regional innovations that'll solve problems the world didn't know Perth could solve.</p>
       </div>
     </div>
   </section>
 
   <!-- =====================================================
-       MEDIA / SPEAKING
+       BLOG PREVIEW
   ===================================================== -->
-  <section id="media">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Speaking &amp; Media</span>
-        <h2 class="section-title">Sharing the story of ecosystem building</h2>
-        <p class="section-desc">Regularly speaking, writing, and appearing across Australian and international media on innovation, entrepreneurship, the future of work, and Australia's opportunity in Asia.</p>
+  <section id="blog-preview">
+    <div class="blog-header reveal">
+      <div>
+        <span class="section-label">Writing</span>
+        <h2>Ideas worth sharing.</h2>
       </div>
+      <a href="blog.html" onclick="gtag('event','blog_view_all',{event_category:'navigation'})">View all posts →</a>
+    </div>
 
-      <div class="media-grid">
-
-        <div class="media-card reveal">
-          <div class="media-type">Keynote Speaking</div>
-          <h4>Innovation &amp; Ecosystem Building</h4>
-          <p>Keynotes on building startup ecosystems from scratch, the future of communities, and Australia's global innovation opportunity.</p>
-          <div class="media-format">Keynote · Panel · Workshop</div>
+    <div class="blog-grid">
+      <a href="blog.html#ecosystem-equation" class="blog-card featured reveal">
+        <div class="blog-card-image">
+          <div class="blog-card-image-label">Ecosystems</div>
         </div>
-
-        <div class="media-card reveal">
-          <div class="media-type">Media &amp; Press</div>
-          <h4>Perth's Startup Scene &amp; Beyond</h4>
-          <p>Quoted and featured across Business News WA, The West Australian, StartupDaily, national tech media, and international innovation publications.</p>
-          <div class="media-format">Print · Podcast · Online</div>
+        <div class="blog-card-body">
+          <div class="blog-card-category">Ecosystem Building</div>
+          <h3 class="blog-card-title">The Ecosystem Equation: Why Perth's Innovation Hub Works — and What Most Cities Get Wrong</h3>
+          <p class="blog-card-excerpt">Everyone wants a Silicon Valley. Almost everyone builds it wrong. Here's what 13 years of trial, error, and genuine breakthroughs taught me about what it actually takes.</p>
+          <div class="blog-card-meta">10 min read · Ecosystem Building</div>
         </div>
+      </a>
 
-        <div class="media-card reveal">
-          <div class="media-type">Government Advisory</div>
-          <h4>Policy &amp; Innovation Strategy</h4>
-          <p>Advising federal and state government on innovation policy, startup ecosystem development, and future of work programs across Western Australia.</p>
-          <div class="media-format">Government · Policy · Research</div>
+      <a href="blog.html#she-codes-story" class="blog-card reveal">
+        <div class="blog-card-image gold">
+          <div class="blog-card-image-label">She Codes</div>
         </div>
-
-        <div class="media-card reveal">
-          <div class="media-type">International</div>
-          <h4>Asia-Pacific Connectivity</h4>
-          <p>Representing Australian innovation on the global stage — Asia-Pacific forums, international accelerator programs, and cross-border ecosystem partnerships.</p>
-          <div class="media-format">Asia-Pacific · Global · Diplomacy</div>
+        <div class="blog-card-body">
+          <div class="blog-card-category">Women in Tech</div>
+          <h3 class="blog-card-title">6,000 Women Later: What She Codes Taught Me About Scaling Impact</h3>
+          <p class="blog-card-excerpt">It started with a workshop. It became a movement. The unexpected lessons from building Australia's largest women in tech initiative.</p>
+          <div class="blog-card-meta">7 min read · Impact</div>
         </div>
+      </a>
 
-      </div>
+      <a href="blog.html#build-from-edge" class="blog-card reveal">
+        <div class="blog-card-image teal">
+          <div class="blog-card-image-label">Strategy</div>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-category">Founder Strategy</div>
+          <h3 class="blog-card-title">Why the Best Founders Should Build From the Edge</h3>
+          <p class="blog-card-excerpt">The conventional advice is wrong. Being far from the centre isn't a disadvantage — it might be your greatest strategic asset. Here's why.</p>
+          <div class="blog-card-meta">6 min read · Strategy</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       NEWSLETTER
+  ===================================================== -->
+  <section id="newsletter">
+    <div class="newsletter-inner reveal">
+      <span class="section-label">Newsletter</span>
+      <h2>Think further. Build better.</h2>
+      <p>Occasional writing on ecosystem building, venture capital, innovation strategy, and what it means to build from Perth. No fluff. No cadence pressure. Just ideas worth your time.</p>
+
+      <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+        <input type="email" class="newsletter-input" placeholder="your@email.com" required id="newsletter-email">
+        <button type="submit" class="btn btn-gold" onclick="gtag('event','newsletter_subscribe',{event_category:'conversion'})">Subscribe</button>
+      </form>
+      <p class="newsletter-note">No spam. Unsubscribe any time. Usually monthly or less.</p>
     </div>
   </section>
 
@@ -1465,13 +1263,17 @@
        CONNECT
   ===================================================== -->
   <section id="connect">
-    <div class="connect-inner">
-      <span class="section-label">Get in Touch</span>
-      <h2>Let's build something worth building.</h2>
-      <p>Whether you're a founder looking for community, an organisation wanting to understand what a genuine innovation ecosystem looks like, or someone curious about what Perth's next chapter can be — I want to hear from you.</p>
+    <div class="connect-inner reveal">
+      <span class="section-label">Let's Talk</span>
+      <h2>Got something worth building?</h2>
+      <p>I'm genuinely interested in ambitious ideas, unusual collaborations, and the kind of conversations that don't have an easy answer. If something on this page resonated — reach out.</p>
+
       <div class="connect-ctas">
-        <a href="mailto:brodie.mcculloch@gmail.com" class="btn btn-gold">Email Brodie &rarr;</a>
-        <a href="https://linkedin.com/in/brodiemcculloch" target="_blank" rel="noopener" class="btn btn-outline-light">Connect on LinkedIn</a>
+        <a href="https://www.linkedin.com/in/brodiemcculloch" target="_blank" rel="noopener" class="btn btn-navy" onclick="gtag('event','connect_linkedin',{event_category:'cta'})">
+          Connect on LinkedIn
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="mailto:brodie@spacecubed.com" class="btn btn-outline" onclick="gtag('event','connect_email',{event_category:'cta'})">Email me</a>
       </div>
     </div>
   </section>
@@ -1481,67 +1283,123 @@
   ===================================================== -->
   <footer>
     <div class="footer-inner">
-      <a href="#hero" class="footer-logo">Brodie McCulloch</a>
-      <ul class="footer-links">
-        <li><a href="#work">Work</a></li>
-        <li><a href="#focus">Ventures</a></li>
-        <li><a href="#journey">About</a></li>
-        <li><a href="#media">Speaking</a></li>
-        <li><a href="#connect">Connect</a></li>
-      </ul>
-      <span class="footer-copy">&copy; 2026 Brodie McCulloch</span>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo">Brodie McCulloch</a>
+          <p>Ecosystem builder, venture partner, and innovation catalyst. Based in Perth, WA. Connected globally.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Work</h4>
+          <ul>
+            <li><a href="https://spacecubed.com" target="_blank" rel="noopener">Spacecubed</a></li>
+            <li><a href="https://pluseight.co" target="_blank" rel="noopener">Plus Eight</a></li>
+            <li><a href="https://shecodes.com.au" target="_blank" rel="noopener">She Codes</a></li>
+            <li><a href="#programs">AARP</a></li>
+            <li><a href="#programs">Purpose Ventures</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="#what-i-do">What I Build</a></li>
+            <li><a href="#who-i-work-with">Who I Work With</a></li>
+            <li><a href="#credentials">Background</a></li>
+            <li><a href="blog.html">Writing</a></li>
+            <li><a href="#connect">Connect</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/brodiemcculloch" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://twitter.com/brodiemcculloch" target="_blank" rel="noopener">Twitter / X</a></li>
+            <li><a href="mailto:brodie@spacecubed.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Brodie McCulloch. Built with intention in Perth, WA.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/brodiemcculloch" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://twitter.com/brodiemcculloch" target="_blank" rel="noopener">Twitter</a>
+          <a href="mailto:brodie@spacecubed.com">Email</a>
+        </div>
+      </div>
     </div>
   </footer>
 
   <!-- =====================================================
-       JAVASCRIPT
+       SCRIPTS
   ===================================================== -->
   <script>
     // Nav scroll effect
-    const nav = document.getElementById('nav');
+    const nav = document.getElementById('site-nav');
     window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 24);
+      nav.classList.toggle('scrolled', window.scrollY > 40);
     }, { passive: true });
 
-    // Mobile menu
-    const hamburger = document.getElementById('hamburger');
-    const drawer = document.getElementById('nav-drawer');
+    // Mobile hamburger
+    const hamburger = document.getElementById('nav-hamburger');
+    const navLinks = document.getElementById('nav-links');
     hamburger.addEventListener('click', () => {
-      drawer.classList.toggle('open');
+      navLinks.classList.toggle('open');
     });
-
-    // Close drawer on link click
-    drawer.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => drawer.classList.remove('open'));
-    });
-
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        const target = document.querySelector(a.getAttribute('href'));
-        if (!target) return;
-        e.preventDefault();
-        const offset = 72;
-        const top = target.getBoundingClientRect().top + window.scrollY - offset;
-        window.scrollTo({ top, behavior: 'smooth' });
-        drawer.classList.remove('open');
-      });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
     });
 
     // Scroll reveal
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1, rootMargin: '0px 0px -56px 0px' }
-    );
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          // Stagger delay for cards in the same parent
+          const siblings = Array.from(entry.target.parentElement.querySelectorAll('.reveal'));
+          const delay = siblings.indexOf(entry.target) * 80;
+          setTimeout(() => entry.target.classList.add('visible'), delay);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => observer.observe(el));
 
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    // Newsletter submit
+    function handleNewsletterSubmit(e) {
+      e.preventDefault();
+      const email = document.getElementById('newsletter-email').value;
+      gtag('event', 'newsletter_submit', { event_category: 'conversion', event_label: 'footer_form' });
+      // Replace with actual Mailchimp/ConvertKit endpoint
+      alert('Thanks! You\'re on the list. Talk soon.');
+      e.target.reset();
+    }
+
+    // Stat counter animation
+    function animateCount(el, target, suffix, duration) {
+      const start = 0;
+      const step = (timestamp) => {
+        if (!el.startTime) el.startTime = timestamp;
+        const progress = Math.min((timestamp - el.startTime) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(eased * target) + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    }
+
+    // Animate stats when visible
+    const statObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          statObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.stat-number').forEach(el => statObserver.observe(el));
   </script>
 
 </body>
